@@ -381,7 +381,7 @@ canvas{display:block}
   </div>
 </div>
 <div id="p2" class="pg">
-      <div style="font-size:13px;font-weight:600;color:var(--t1);margin-bottom:14px">Ranking completo — 15 hunters <span style="font-size:11px;color:var(--t3);font-weight:400">· Captura 70% + RUC 10% + QR 10% + Arisale 10% · Junio dia 30</span></div>
+      <div style="font-size:13px;font-weight:600;color:var(--t1);margin-bottom:14px">Ranking completo — 15 hunters <span style="font-size:11px;color:var(--t3);font-weight:400">· Captura 65% + RUC 15% + QR 7% + Arisale 7% + Planillas 6% · Junio dia 30</span></div>
       <div class="rl" id="rkList"></div>
     </div>
 
@@ -559,10 +559,10 @@ canvas{display:block}
 <div id="p8" class="pg">
       <!-- KPIs -->
       <div class="krow k4" style="margin-bottom:14px" id="p8kpis">
-        <div class="kpi"><div class="kbar" style="background:#00E5A0"></div><div class="klbl">RUC Nuevos — Junio</div><div class="kval" style="color:#00E5A0" id="k8total">34</div><div class="ksub"><span class="bge bw">Cuota: 42 RUC</span></div></div>
+        <div class="kpi"><div class="kbar" style="background:#00E5A0"></div><div class="klbl">RUC Nuevos — Junio</div><div class="kval" style="color:#00E5A0" id="k8total">58</div><div class="ksub"><span class="bge bw">Cuota: 42 RUC</span></div></div>
         <div class="kpi"><div class="kbar" style="background:#3B82F6"></div><div class="klbl">Llegan a S/.25K</div><div class="kval" style="color:#3B82F6" id="k8ok">8</div><div class="ksub"><span class="bge" style="background:rgba(59,130,246,.15);color:#3B82F6" id="k8okpct">19.0%</span></div></div>
         <div class="kpi"><div class="kbar" style="background:#EF4444"></div><div class="klbl">No llegan a S/.25K</div><div class="kval" style="color:#EF4444" id="k8nok">26</div><div class="ksub"><span class="bge" style="background:rgba(239,68,68,.12);color:#EF4444">Meta &gt; S/.25,000</span></div></div>
-        <div class="kpi"><div class="kbar" style="background:#A855F7"></div><div class="klbl">Proyeccion total</div><div class="kval" style="color:#A855F7" id="k8proy">81%</div><div class="ksub"><span class="bge bu" id="k8real">Real: 34 RUC · Dia 30 Jun</span></div></div>
+        <div class="kpi"><div class="kbar" style="background:#A855F7"></div><div class="klbl">Proyeccion total</div><div class="kval" style="color:#A855F7" id="k8proy">81%</div><div class="ksub"><span class="bge bu" id="k8real">Real: 58 RUC · Dia 30 Jun</span></div></div>
       </div>
 
       <!-- Tabla RUC — full width -->
@@ -801,22 +801,22 @@ canvas{display:block}
 </div>
 <script>
 const RANK_ABR=[
-{pos:1,n:'ANDREA SOTO',ini:'AS',t:'SENIOR',col:'#FFD93D',tenure:'1 ANO 3 MESES',score:153.3,incr_pct:295.2,incr_val:826489,ruc_pct:0.0,ruc_n:0,qr_pct:133.3,qr_n:4,aris_pct:0.0,aris_val:0,badge:'ENCAMINADO'},
-{pos:2,n:'ALICIA QUINONES',ini:'AQ',t:'SENIOR',col:'#FF8C42',tenure:'1 ANO 3 MESES',score:145.8,incr_pct:215.2,incr_val:602519,ruc_pct:0.0,ruc_n:0,qr_pct:33.3,qr_n:1,aris_pct:25.0,aris_val:60,badge:'ENCAMINADO'},
-{pos:3,n:'PATRICIA ASTORGA',ini:'PA',t:'SENIOR',col:'#00E5A0',tenure:'1 ANO 3 MESES',score:143.3,incr_pct:301.3,incr_val:843622,ruc_pct:0.0,ruc_n:0,qr_pct:33.3,qr_n:1,aris_pct:0.0,aris_val:0,badge:'ENCAMINADO'},
-{pos:4,n:'MELISA LLACCHUAS',ini:'ML',t:'SENIOR',col:'#FF6B9D',tenure:'1 ANO 3 MESES',score:98.2,incr_pct:112.9,incr_val:316072,ruc_pct:0.0,ruc_n:0,qr_pct:166.7,qr_n:5,aris_pct:25.0,aris_val:60,badge:'ENCAMINADO'},
-{pos:5,n:'YASMIN CHECA',ini:'YC',t:'JUNIOR',col:'#888780',tenure:'1 ANO 3 MESES',score:58.4,incr_pct:83.5,incr_val:208672,ruc_pct:0.0,ruc_n:0,qr_pct:0.0,qr_n:0,aris_pct:0.0,aris_val:0,badge:'ENCAMINADO'},
-{pos:6,n:'MELISSA VASQUEZ',ini:'MV',t:'SENIOR',col:'#FF6B6B',tenure:'1 ANO 3 MESES',score:26.2,incr_pct:0.0,incr_val:0,ruc_pct:0.0,ruc_n:0,qr_pct:66.7,qr_n:2,aris_pct:195.4,aris_val:469,badge:'EN DESARROLLO'},
-{pos:7,n:'CRISTIAN HUAMAN',ini:'CH',t:'JUNIOR',col:'#00C9FF',tenure:'1 ANO 3 MESES',score:22.0,incr_pct:17.2,incr_val:42988,ruc_pct:0.0,ruc_n:0,qr_pct:66.7,qr_n:2,aris_pct:33.3,aris_val:60,badge:'EN DESARROLLO'},
-{pos:8,n:'FRANCO ROUILLON',ini:'FR',t:'JUNIOR',col:'#F97316',tenure:'1 ANO 3 MESES',score:20.1,incr_pct:19.2,incr_val:48075,ruc_pct:0.0,ruc_n:0,qr_pct:66.7,qr_n:2,aris_pct:0.0,aris_val:0,badge:'EN DESARROLLO'},
-{pos:9,n:'LEONARDO TELLO',ini:'LT',t:'JUNIOR',col:'#8B5CF6',tenure:'1 ANO 3 MESES',score:16.1,incr_pct:0.0,incr_val:0,ruc_pct:0.0,ruc_n:0,qr_pct:0.0,qr_n:0,aris_pct:160.6,aris_val:289,badge:'EN DESARROLLO'},
-{pos:10,n:'ROSA TORRES',ini:'RT',t:'SENIOR',col:'#6BCF7F',tenure:'1 ANO 3 MESES',score:15.0,incr_pct:0.0,incr_val:0,ruc_pct:0.0,ruc_n:0,qr_pct:0.0,qr_n:0,aris_pct:150.0,aris_val:360,badge:'EN DESARROLLO'},
-{pos:11,n:'MARIA FLORES',ini:'MF',t:'JUNIOR',col:'#EC4899',tenure:'1 ANO 3 MESES',score:11.8,incr_pct:2.5,incr_val:6298,ruc_pct:0.0,ruc_n:0,qr_pct:0.0,qr_n:0,aris_pct:100.0,aris_val:180,badge:'EN DESARROLLO'},
-{pos:12,n:'ANALIZ CASTILLO',ini:'AC',t:'SENIOR',col:'#F59E0B',tenure:'1 ANO 3 MESES',score:11.7,incr_pct:0.0,incr_val:0,ruc_pct:0.0,ruc_n:0,qr_pct:66.7,qr_n:2,aris_pct:50.0,aris_val:120,badge:'EN DESARROLLO'},
-{pos:13,n:'OLIVER LOPEZ',ini:'OL',t:'SENIOR',col:'#4ECDC4',tenure:'1 ANO 3 MESES',score:5.0,incr_pct:0.0,incr_val:0,ruc_pct:0.0,ruc_n:0,qr_pct:0.0,qr_n:0,aris_pct:50.0,aris_val:120,badge:'EN DESARROLLO'},
-{pos:14,n:'ANA CARRERA',ini:'AC2',t:'SENIOR',col:'#A855F7',tenure:'1 ANO 3 MESES',score:3.3,incr_pct:0.0,incr_val:0,ruc_pct:0.0,ruc_n:0,qr_pct:33.3,qr_n:1,aris_pct:0.0,aris_val:0,badge:'EN DESARROLLO'},
-{pos:15,n:'KEVIN PAULINO',ini:'KP',t:'JUNIOR',col:'#06B6D4',tenure:'1 ANO 3 MESES',score:0.0,incr_pct:0.0,incr_val:0,ruc_pct:0.0,ruc_n:0,qr_pct:0.0,qr_n:0,aris_pct:0.0,aris_val:0,badge:'EN DESARROLLO'},
-{pos:16,n:'ROCK LLANOS',ini:'RL',t:'JUNIOR',col:'#84CC16',tenure:'1 ANO 3 MESES',score:0.0,incr_pct:0.0,incr_val:0,ruc_pct:0.0,ruc_n:0,qr_pct:0.0,qr_n:0,aris_pct:0.0,aris_val:0,badge:'EN DESARROLLO'},
+{pos:1,n:'ANDREA SOTO',ini:'AS',t:'SENIOR',col:'#FFD93D',tenure:'1 ANO 3 MESES',score:169.3,incr_pct:335.0,incr_val:938039,ruc_pct:233.3,ruc_n:7,qr_pct:133.3,qr_n:4,aris_pct:0.0,aris_val:0,plan_pct:0.0,plan_n:0,badge:'ENCAMINADO'},
+{pos:2,n:'PATRICIA ASTORGA',ini:'PA',t:'SENIOR',col:'#00E5A0',tenure:'1 ANO 3 MESES',score:164.3,incr_pct:403.0,incr_val:1128284,ruc_pct:100.0,ruc_n:3,qr_pct:33.3,qr_n:1,aris_pct:295.4,aris_val:709,plan_pct:50.0,plan_n:1,badge:'ENCAMINADO'},
+{pos:3,n:'ALICIA QUINONES',ini:'AQ',t:'SENIOR',col:'#FF8C42',tenure:'1 ANO 3 MESES',score:155.8,incr_pct:273.3,incr_val:765140,ruc_pct:133.3,ruc_n:4,qr_pct:33.3,qr_n:1,aris_pct:50.0,aris_val:120,plan_pct:0.0,plan_n:0,badge:'ENCAMINADO'},
+{pos:4,n:'MELISA LLACCHUAS',ini:'ML',t:'SENIOR',col:'#FF6B9D',tenure:'1 ANO 3 MESES',score:128.7,incr_pct:165.1,incr_val:462403,ruc_pct:100.0,ruc_n:3,qr_pct:66.7,qr_n:2,aris_pct:25.0,aris_val:60,plan_pct:0.0,plan_n:0,badge:'ENCAMINADO'},
+{pos:5,n:'CRISTIAN HUAMAN',ini:'CH',t:'JUNIOR',col:'#00C9FF',tenure:'1 ANO 3 MESES',score:72.8,incr_pct:55.0,incr_val:137483,ruc_pct:233.3,ruc_n:7,qr_pct:33.3,qr_n:1,aris_pct:66.7,aris_val:120,plan_pct:0.0,plan_n:0,badge:'ENCAMINADO'},
+{pos:6,n:'ANALIZ CASTILLO',ini:'AC',t:'SENIOR',col:'#F59E0B',tenure:'1 ANO 3 MESES',score:68.8,incr_pct:53.2,incr_val:149098,ruc_pct:100.0,ruc_n:3,qr_pct:100.0,qr_n:3,aris_pct:175.0,aris_val:420,plan_pct:0.0,plan_n:0,badge:'ENCAMINADO'},
+{pos:7,n:'YASMIN CHECA',ini:'YC',t:'JUNIOR',col:'#888780',tenure:'1 ANO 3 MESES',score:63.0,incr_pct:96.9,incr_val:242198,ruc_pct:0.0,ruc_n:0,qr_pct:0.0,qr_n:0,aris_pct:0.0,aris_val:0,plan_pct:0.0,plan_n:0,badge:'ENCAMINADO'},
+{pos:8,n:'ROSA TORRES',ini:'RT',t:'SENIOR',col:'#6BCF7F',tenure:'1 ANO 3 MESES',score:58.1,incr_pct:28.9,incr_val:81048,ruc_pct:333.3,ruc_n:10,qr_pct:33.3,qr_n:1,aris_pct:100.0,aris_val:240,plan_pct:0.0,plan_n:0,badge:'ENCAMINADO'},
+{pos:9,n:'FRANCO ROUILLON',ini:'FR',t:'JUNIOR',col:'#F97316',tenure:'1 ANO 3 MESES',score:43.2,incr_pct:25.0,incr_val:62599,ruc_pct:133.3,ruc_n:4,qr_pct:100.0,qr_n:3,aris_pct:0.0,aris_val:0,plan_pct:0.0,plan_n:0,badge:'EN DESARROLLO'},
+{pos:10,n:'KEVIN PAULINO',ini:'KP',t:'JUNIOR',col:'#06B6D4',tenure:'1 ANO 3 MESES',score:35.8,incr_pct:32.0,incr_val:80121,ruc_pct:100.0,ruc_n:3,qr_pct:0.0,qr_n:0,aris_pct:0.0,aris_val:0,plan_pct:0.0,plan_n:0,badge:'EN DESARROLLO'},
+{pos:11,n:'MARIA FLORES',ini:'MF',t:'JUNIOR',col:'#EC4899',tenure:'1 ANO 3 MESES',score:34.9,incr_pct:12.2,incr_val:30596,ruc_pct:133.3,ruc_n:4,qr_pct:0.0,qr_n:0,aris_pct:100.0,aris_val:180,plan_pct:0.0,plan_n:0,badge:'EN DESARROLLO'},
+{pos:12,n:'OLIVER LOPEZ',ini:'OL',t:'SENIOR',col:'#4ECDC4',tenure:'1 ANO 3 MESES',score:34.0,incr_pct:0.0,incr_val:0,ruc_pct:133.3,ruc_n:4,qr_pct:0.0,qr_n:0,aris_pct:225.0,aris_val:540,plan_pct:0.0,plan_n:0,badge:'EN DESARROLLO'},
+{pos:13,n:'MELISSA VASQUEZ',ini:'MV',t:'SENIOR',col:'#FF6B6B',tenure:'1 ANO 3 MESES',score:22.3,incr_pct:0.0,incr_val:0,ruc_pct:133.3,ruc_n:4,qr_pct:33.3,qr_n:1,aris_pct:0.0,aris_val:0,plan_pct:0.0,plan_n:0,badge:'EN DESARROLLO'},
+{pos:14,n:'LEONARDO TELLO',ini:'LT',t:'JUNIOR',col:'#8B5CF6',tenure:'1 ANO 3 MESES',score:11.2,incr_pct:0.0,incr_val:0,ruc_pct:0.0,ruc_n:0,qr_pct:0.0,qr_n:0,aris_pct:160.6,aris_val:289,plan_pct:0.0,plan_n:0,badge:'EN DESARROLLO'},
+{pos:15,n:'ROCK LLANOS',ini:'RL',t:'JUNIOR',col:'#84CC16',tenure:'1 ANO 3 MESES',score:10.0,incr_pct:0.0,incr_val:0,ruc_pct:66.7,ruc_n:2,qr_pct:0.0,qr_n:0,aris_pct:0.0,aris_val:0,plan_pct:0.0,plan_n:0,badge:'EN DESARROLLO'},
+{pos:16,n:'ANA CARRERA',ini:'AC2',t:'SENIOR',col:'#A855F7',tenure:'1 ANO 3 MESES',score:0.0,incr_pct:0.0,incr_val:0,ruc_pct:0.0,ruc_n:0,qr_pct:0.0,qr_n:0,aris_pct:0.0,aris_val:0,plan_pct:0.0,plan_n:0,badge:'EN DESARROLLO'},
 ];
 const ARIS_DATA=[
   {hunter:'ANALIZ CASTILLO',cuenta:'YASERINA LLERENA',lic:1,val:60,col:'#F59E0B',est:'CERRADO'},
@@ -887,20 +887,20 @@ const QR_META=[
   {n:'LEONARDO TELLO',ini:'LT',col:'#8B5CF6',act:0,pend:0,monto:0},
 ];
 const RUC_META=[
-  {n:'ANDREA SOTO',col:'#FFD93D',ruc:5,ok:true},
-  {n:'ROSA TORRES',col:'#6BCF7F',ruc:4,ok:true},
+  {n:'ROSA TORRES',col:'#6BCF7F',ruc:10,ok:true},
+  {n:'ANDREA SOTO',col:'#FFD93D',ruc:7,ok:true},
+  {n:'CRISTIAN HUAMAN',col:'#00C9FF',ruc:7,ok:true},
+  {n:'MELISSA VASQUEZ',col:'#FF6B6B',ruc:4,ok:true},
+  {n:'MARIA FLORES',col:'#EC4899',ruc:4,ok:true},
   {n:'ALICIA QUINONES',col:'#FF8C42',ruc:4,ok:true},
+  {n:'OLIVER LOPEZ',col:'#4ECDC4',ruc:4,ok:true},
   {n:'FRANCO ROUILLON',col:'#F97316',ruc:4,ok:true},
-  {n:'MARIA FLORES',col:'#EC4899',ruc:3,ok:true},
+  {n:'MELISA LLACCHUAS',col:'#FF6B9D',ruc:3,ok:true},
   {n:'KEVIN PAULINO',col:'#06B6D4',ruc:3,ok:true},
+  {n:'PATRICIA ASTORGA',col:'#00E5A0',ruc:3,ok:true},
   {n:'ANALIZ CASTILLO',col:'#F59E0B',ruc:3,ok:true},
-  {n:'MELISSA VASQUEZ',col:'#FF6B6B',ruc:2,ok:true},
-  {n:'OLIVER LOPEZ',col:'#4ECDC4',ruc:2,ok:true},
   {n:'ROCK LLANOS',col:'#84CC16',ruc:2,ok:true},
-  {n:'MELISA LLACCHUAS',col:'#FF6B9D',ruc:1,ok:true},
-  {n:'PATRICIA ASTORGA',col:'#00E5A0',ruc:1,ok:true},
   {n:'YASMIN CHECA',col:'#888780',ruc:0,ok:false},
-  {n:'CRISTIAN HUAMAN',col:'#00C9FF',ruc:0,ok:false},
   {n:'ANA CARRERA',col:'#A855F7',ruc:0,ok:false},
   {n:'LEONARDO TELLO',col:'#8B5CF6',ruc:0,ok:false},
 ];
@@ -1017,7 +1017,7 @@ function bP8_abril(){
 }
 const PAGES={
   p1:{title:'Resumen general',sub:'Corte al 30 de Junio 2026 · Dia 30',build:bP1},
-  p2:{title:'Ranking — Solo Abril 2026',sub:'Captura 70% + RUC 10% + QR 10% + Arisale 10% · Al dia 30',build:bP2},
+  p2:{title:'Ranking — Solo Abril 2026',sub:'Captura 65% + RUC 15% + QR 7% + Arisale 7% + Planillas 6% · Al dia 30',build:bP2},
   p3:{title:'Graficos de lineas por mes',sub:'Enero · Febrero · Marzo · Abril',build:bP3},
   p4:{title:'Curva Abril 2026',sub:'Abr-07 al Abr-30 — 7 cortes · Real vs Proyectado',build:bP4},
   p5:{title:'Arisale — Solo Abril 2026',sub:'28 licencias · S/.1,955 · 8 hunters · todo cerrado ✅',build:bP5},
@@ -1056,42 +1056,42 @@ function dc(id){if(CHS[id]){try{CHS[id].destroy();}catch(e){}delete CHS[id];}}
 const dkO=(leg=false)=>({responsive:true,maintainAspectRatio:false,plugins:{legend:{display:leg,labels:{color:'#718096',font:{size:10}}}}});
 var done={};
 const RANK=[
-{pos:1,n:'ANDREA SOTO',ini:'AS',t:'SENIOR',col:'#FFD93D',tenure:'1 ANO 3 MESES',score:153.3,incr_pct:295.2,incr_val:826489,ruc_pct:0.0,ruc_n:0,qr_pct:133.3,qr_n:4,aris_pct:0.0,aris_val:0,badge:'ENCAMINADO',ms:[],as:[]},
-{pos:2,n:'ALICIA QUINONES',ini:'AQ',t:'SENIOR',col:'#FF8C42',tenure:'1 ANO 3 MESES',score:145.8,incr_pct:215.2,incr_val:602519,ruc_pct:0.0,ruc_n:0,qr_pct:33.3,qr_n:1,aris_pct:25.0,aris_val:60,badge:'ENCAMINADO',ms:[],as:[]},
-{pos:3,n:'PATRICIA ASTORGA',ini:'PA',t:'SENIOR',col:'#00E5A0',tenure:'1 ANO 3 MESES',score:143.3,incr_pct:301.3,incr_val:843622,ruc_pct:0.0,ruc_n:0,qr_pct:33.3,qr_n:1,aris_pct:0.0,aris_val:0,badge:'ENCAMINADO',ms:[],as:[]},
-{pos:4,n:'MELISA LLACCHUAS',ini:'ML',t:'SENIOR',col:'#FF6B9D',tenure:'1 ANO 3 MESES',score:98.2,incr_pct:112.9,incr_val:316072,ruc_pct:0.0,ruc_n:0,qr_pct:166.7,qr_n:5,aris_pct:25.0,aris_val:60,badge:'ENCAMINADO',ms:[],as:[]},
-{pos:5,n:'YASMIN CHECA',ini:'YC',t:'JUNIOR',col:'#888780',tenure:'1 ANO 3 MESES',score:58.4,incr_pct:83.5,incr_val:208672,ruc_pct:0.0,ruc_n:0,qr_pct:0.0,qr_n:0,aris_pct:0.0,aris_val:0,badge:'ENCAMINADO',ms:[],as:[]},
-{pos:6,n:'MELISSA VASQUEZ',ini:'MV',t:'SENIOR',col:'#FF6B6B',tenure:'1 ANO 3 MESES',score:26.2,incr_pct:0.0,incr_val:0,ruc_pct:0.0,ruc_n:0,qr_pct:66.7,qr_n:2,aris_pct:195.4,aris_val:469,badge:'EN DESARROLLO',ms:[],as:[]},
-{pos:7,n:'CRISTIAN HUAMAN',ini:'CH',t:'JUNIOR',col:'#00C9FF',tenure:'1 ANO 3 MESES',score:22.0,incr_pct:17.2,incr_val:42988,ruc_pct:0.0,ruc_n:0,qr_pct:66.7,qr_n:2,aris_pct:33.3,aris_val:60,badge:'EN DESARROLLO',ms:[],as:[]},
-{pos:8,n:'FRANCO ROUILLON',ini:'FR',t:'JUNIOR',col:'#F97316',tenure:'1 ANO 3 MESES',score:20.1,incr_pct:19.2,incr_val:48075,ruc_pct:0.0,ruc_n:0,qr_pct:66.7,qr_n:2,aris_pct:0.0,aris_val:0,badge:'EN DESARROLLO',ms:[],as:[]},
-{pos:9,n:'LEONARDO TELLO',ini:'LT',t:'JUNIOR',col:'#8B5CF6',tenure:'1 ANO 3 MESES',score:16.1,incr_pct:0.0,incr_val:0,ruc_pct:0.0,ruc_n:0,qr_pct:0.0,qr_n:0,aris_pct:160.6,aris_val:289,badge:'EN DESARROLLO',ms:[],as:[]},
-{pos:10,n:'ROSA TORRES',ini:'RT',t:'SENIOR',col:'#6BCF7F',tenure:'1 ANO 3 MESES',score:15.0,incr_pct:0.0,incr_val:0,ruc_pct:0.0,ruc_n:0,qr_pct:0.0,qr_n:0,aris_pct:150.0,aris_val:360,badge:'EN DESARROLLO',ms:[],as:[]},
-{pos:11,n:'MARIA FLORES',ini:'MF',t:'JUNIOR',col:'#EC4899',tenure:'1 ANO 3 MESES',score:11.8,incr_pct:2.5,incr_val:6298,ruc_pct:0.0,ruc_n:0,qr_pct:0.0,qr_n:0,aris_pct:100.0,aris_val:180,badge:'EN DESARROLLO',ms:[],as:[]},
-{pos:12,n:'ANALIZ CASTILLO',ini:'AC',t:'SENIOR',col:'#F59E0B',tenure:'1 ANO 3 MESES',score:11.7,incr_pct:0.0,incr_val:0,ruc_pct:0.0,ruc_n:0,qr_pct:66.7,qr_n:2,aris_pct:50.0,aris_val:120,badge:'EN DESARROLLO',ms:[],as:[]},
-{pos:13,n:'OLIVER LOPEZ',ini:'OL',t:'SENIOR',col:'#4ECDC4',tenure:'1 ANO 3 MESES',score:5.0,incr_pct:0.0,incr_val:0,ruc_pct:0.0,ruc_n:0,qr_pct:0.0,qr_n:0,aris_pct:50.0,aris_val:120,badge:'EN DESARROLLO',ms:[],as:[]},
-{pos:14,n:'ANA CARRERA',ini:'AC2',t:'SENIOR',col:'#A855F7',tenure:'1 ANO 3 MESES',score:3.3,incr_pct:0.0,incr_val:0,ruc_pct:0.0,ruc_n:0,qr_pct:33.3,qr_n:1,aris_pct:0.0,aris_val:0,badge:'EN DESARROLLO',ms:[],as:[]},
-{pos:15,n:'KEVIN PAULINO',ini:'KP',t:'JUNIOR',col:'#06B6D4',tenure:'1 ANO 3 MESES',score:0.0,incr_pct:0.0,incr_val:0,ruc_pct:0.0,ruc_n:0,qr_pct:0.0,qr_n:0,aris_pct:0.0,aris_val:0,badge:'EN DESARROLLO',ms:[],as:[]},
-{pos:16,n:'ROCK LLANOS',ini:'RL',t:'JUNIOR',col:'#84CC16',tenure:'1 ANO 3 MESES',score:0.0,incr_pct:0.0,incr_val:0,ruc_pct:0.0,ruc_n:0,qr_pct:0.0,qr_n:0,aris_pct:0.0,aris_val:0,badge:'EN DESARROLLO',ms:[],as:[]},
+{pos:1,n:'ANDREA SOTO',ini:'AS',t:'SENIOR',col:'#FFD93D',tenure:'1 ANO 3 MESES',score:169.3,incr_pct:335.0,incr_val:938039,ruc_pct:233.3,ruc_n:7,qr_pct:133.3,qr_n:4,aris_pct:0.0,aris_val:0,plan_pct:0.0,plan_n:0,badge:'ENCAMINADO',ms:[],as:[]},
+{pos:2,n:'PATRICIA ASTORGA',ini:'PA',t:'SENIOR',col:'#00E5A0',tenure:'1 ANO 3 MESES',score:164.3,incr_pct:403.0,incr_val:1128284,ruc_pct:100.0,ruc_n:3,qr_pct:33.3,qr_n:1,aris_pct:295.4,aris_val:709,plan_pct:50.0,plan_n:1,badge:'ENCAMINADO',ms:[],as:[]},
+{pos:3,n:'ALICIA QUINONES',ini:'AQ',t:'SENIOR',col:'#FF8C42',tenure:'1 ANO 3 MESES',score:155.8,incr_pct:273.3,incr_val:765140,ruc_pct:133.3,ruc_n:4,qr_pct:33.3,qr_n:1,aris_pct:50.0,aris_val:120,plan_pct:0.0,plan_n:0,badge:'ENCAMINADO',ms:[],as:[]},
+{pos:4,n:'MELISA LLACCHUAS',ini:'ML',t:'SENIOR',col:'#FF6B9D',tenure:'1 ANO 3 MESES',score:128.7,incr_pct:165.1,incr_val:462403,ruc_pct:100.0,ruc_n:3,qr_pct:66.7,qr_n:2,aris_pct:25.0,aris_val:60,plan_pct:0.0,plan_n:0,badge:'ENCAMINADO',ms:[],as:[]},
+{pos:5,n:'CRISTIAN HUAMAN',ini:'CH',t:'JUNIOR',col:'#00C9FF',tenure:'1 ANO 3 MESES',score:72.8,incr_pct:55.0,incr_val:137483,ruc_pct:233.3,ruc_n:7,qr_pct:33.3,qr_n:1,aris_pct:66.7,aris_val:120,plan_pct:0.0,plan_n:0,badge:'ENCAMINADO',ms:[],as:[]},
+{pos:6,n:'ANALIZ CASTILLO',ini:'AC',t:'SENIOR',col:'#F59E0B',tenure:'1 ANO 3 MESES',score:68.8,incr_pct:53.2,incr_val:149098,ruc_pct:100.0,ruc_n:3,qr_pct:100.0,qr_n:3,aris_pct:175.0,aris_val:420,plan_pct:0.0,plan_n:0,badge:'ENCAMINADO',ms:[],as:[]},
+{pos:7,n:'YASMIN CHECA',ini:'YC',t:'JUNIOR',col:'#888780',tenure:'1 ANO 3 MESES',score:63.0,incr_pct:96.9,incr_val:242198,ruc_pct:0.0,ruc_n:0,qr_pct:0.0,qr_n:0,aris_pct:0.0,aris_val:0,plan_pct:0.0,plan_n:0,badge:'ENCAMINADO',ms:[],as:[]},
+{pos:8,n:'ROSA TORRES',ini:'RT',t:'SENIOR',col:'#6BCF7F',tenure:'1 ANO 3 MESES',score:58.1,incr_pct:28.9,incr_val:81048,ruc_pct:333.3,ruc_n:10,qr_pct:33.3,qr_n:1,aris_pct:100.0,aris_val:240,plan_pct:0.0,plan_n:0,badge:'ENCAMINADO',ms:[],as:[]},
+{pos:9,n:'FRANCO ROUILLON',ini:'FR',t:'JUNIOR',col:'#F97316',tenure:'1 ANO 3 MESES',score:43.2,incr_pct:25.0,incr_val:62599,ruc_pct:133.3,ruc_n:4,qr_pct:100.0,qr_n:3,aris_pct:0.0,aris_val:0,plan_pct:0.0,plan_n:0,badge:'EN DESARROLLO',ms:[],as:[]},
+{pos:10,n:'KEVIN PAULINO',ini:'KP',t:'JUNIOR',col:'#06B6D4',tenure:'1 ANO 3 MESES',score:35.8,incr_pct:32.0,incr_val:80121,ruc_pct:100.0,ruc_n:3,qr_pct:0.0,qr_n:0,aris_pct:0.0,aris_val:0,plan_pct:0.0,plan_n:0,badge:'EN DESARROLLO',ms:[],as:[]},
+{pos:11,n:'MARIA FLORES',ini:'MF',t:'JUNIOR',col:'#EC4899',tenure:'1 ANO 3 MESES',score:34.9,incr_pct:12.2,incr_val:30596,ruc_pct:133.3,ruc_n:4,qr_pct:0.0,qr_n:0,aris_pct:100.0,aris_val:180,plan_pct:0.0,plan_n:0,badge:'EN DESARROLLO',ms:[],as:[]},
+{pos:12,n:'OLIVER LOPEZ',ini:'OL',t:'SENIOR',col:'#4ECDC4',tenure:'1 ANO 3 MESES',score:34.0,incr_pct:0.0,incr_val:0,ruc_pct:133.3,ruc_n:4,qr_pct:0.0,qr_n:0,aris_pct:225.0,aris_val:540,plan_pct:0.0,plan_n:0,badge:'EN DESARROLLO',ms:[],as:[]},
+{pos:13,n:'MELISSA VASQUEZ',ini:'MV',t:'SENIOR',col:'#FF6B6B',tenure:'1 ANO 3 MESES',score:22.3,incr_pct:0.0,incr_val:0,ruc_pct:133.3,ruc_n:4,qr_pct:33.3,qr_n:1,aris_pct:0.0,aris_val:0,plan_pct:0.0,plan_n:0,badge:'EN DESARROLLO',ms:[],as:[]},
+{pos:14,n:'LEONARDO TELLO',ini:'LT',t:'JUNIOR',col:'#8B5CF6',tenure:'1 ANO 3 MESES',score:11.2,incr_pct:0.0,incr_val:0,ruc_pct:0.0,ruc_n:0,qr_pct:0.0,qr_n:0,aris_pct:160.6,aris_val:289,plan_pct:0.0,plan_n:0,badge:'EN DESARROLLO',ms:[],as:[]},
+{pos:15,n:'ROCK LLANOS',ini:'RL',t:'JUNIOR',col:'#84CC16',tenure:'1 ANO 3 MESES',score:10.0,incr_pct:0.0,incr_val:0,ruc_pct:66.7,ruc_n:2,qr_pct:0.0,qr_n:0,aris_pct:0.0,aris_val:0,plan_pct:0.0,plan_n:0,badge:'EN DESARROLLO',ms:[],as:[]},
+{pos:16,n:'ANA CARRERA',ini:'AC2',t:'SENIOR',col:'#A855F7',tenure:'1 ANO 3 MESES',score:0.0,incr_pct:0.0,incr_val:0,ruc_pct:0.0,ruc_n:0,qr_pct:0.0,qr_n:0,aris_pct:0.0,aris_val:0,plan_pct:0.0,plan_n:0,badge:'EN DESARROLLO',ms:[],as:[]},
 ];
 
 
 const RANK_ABR=[
-{pos:1,n:'ANDREA SOTO',ini:'AS',t:'SENIOR',col:'#FFD93D',tenure:'1 ANO 3 MESES',score:153.3,incr_pct:295.2,incr_val:826489,ruc_pct:0.0,ruc_n:0,qr_pct:133.3,qr_n:4,aris_pct:0.0,aris_val:0,badge:'ENCAMINADO'},
-{pos:2,n:'ALICIA QUINONES',ini:'AQ',t:'SENIOR',col:'#FF8C42',tenure:'1 ANO 3 MESES',score:145.8,incr_pct:215.2,incr_val:602519,ruc_pct:0.0,ruc_n:0,qr_pct:33.3,qr_n:1,aris_pct:25.0,aris_val:60,badge:'ENCAMINADO'},
-{pos:3,n:'PATRICIA ASTORGA',ini:'PA',t:'SENIOR',col:'#00E5A0',tenure:'1 ANO 3 MESES',score:143.3,incr_pct:301.3,incr_val:843622,ruc_pct:0.0,ruc_n:0,qr_pct:33.3,qr_n:1,aris_pct:0.0,aris_val:0,badge:'ENCAMINADO'},
-{pos:4,n:'MELISA LLACCHUAS',ini:'ML',t:'SENIOR',col:'#FF6B9D',tenure:'1 ANO 3 MESES',score:98.2,incr_pct:112.9,incr_val:316072,ruc_pct:0.0,ruc_n:0,qr_pct:166.7,qr_n:5,aris_pct:25.0,aris_val:60,badge:'ENCAMINADO'},
-{pos:5,n:'YASMIN CHECA',ini:'YC',t:'JUNIOR',col:'#888780',tenure:'1 ANO 3 MESES',score:58.4,incr_pct:83.5,incr_val:208672,ruc_pct:0.0,ruc_n:0,qr_pct:0.0,qr_n:0,aris_pct:0.0,aris_val:0,badge:'ENCAMINADO'},
-{pos:6,n:'MELISSA VASQUEZ',ini:'MV',t:'SENIOR',col:'#FF6B6B',tenure:'1 ANO 3 MESES',score:26.2,incr_pct:0.0,incr_val:0,ruc_pct:0.0,ruc_n:0,qr_pct:66.7,qr_n:2,aris_pct:195.4,aris_val:469,badge:'EN DESARROLLO'},
-{pos:7,n:'CRISTIAN HUAMAN',ini:'CH',t:'JUNIOR',col:'#00C9FF',tenure:'1 ANO 3 MESES',score:22.0,incr_pct:17.2,incr_val:42988,ruc_pct:0.0,ruc_n:0,qr_pct:66.7,qr_n:2,aris_pct:33.3,aris_val:60,badge:'EN DESARROLLO'},
-{pos:8,n:'FRANCO ROUILLON',ini:'FR',t:'JUNIOR',col:'#F97316',tenure:'1 ANO 3 MESES',score:20.1,incr_pct:19.2,incr_val:48075,ruc_pct:0.0,ruc_n:0,qr_pct:66.7,qr_n:2,aris_pct:0.0,aris_val:0,badge:'EN DESARROLLO'},
-{pos:9,n:'LEONARDO TELLO',ini:'LT',t:'JUNIOR',col:'#8B5CF6',tenure:'1 ANO 3 MESES',score:16.1,incr_pct:0.0,incr_val:0,ruc_pct:0.0,ruc_n:0,qr_pct:0.0,qr_n:0,aris_pct:160.6,aris_val:289,badge:'EN DESARROLLO'},
-{pos:10,n:'ROSA TORRES',ini:'RT',t:'SENIOR',col:'#6BCF7F',tenure:'1 ANO 3 MESES',score:15.0,incr_pct:0.0,incr_val:0,ruc_pct:0.0,ruc_n:0,qr_pct:0.0,qr_n:0,aris_pct:150.0,aris_val:360,badge:'EN DESARROLLO'},
-{pos:11,n:'MARIA FLORES',ini:'MF',t:'JUNIOR',col:'#EC4899',tenure:'1 ANO 3 MESES',score:11.8,incr_pct:2.5,incr_val:6298,ruc_pct:0.0,ruc_n:0,qr_pct:0.0,qr_n:0,aris_pct:100.0,aris_val:180,badge:'EN DESARROLLO'},
-{pos:12,n:'ANALIZ CASTILLO',ini:'AC',t:'SENIOR',col:'#F59E0B',tenure:'1 ANO 3 MESES',score:11.7,incr_pct:0.0,incr_val:0,ruc_pct:0.0,ruc_n:0,qr_pct:66.7,qr_n:2,aris_pct:50.0,aris_val:120,badge:'EN DESARROLLO'},
-{pos:13,n:'OLIVER LOPEZ',ini:'OL',t:'SENIOR',col:'#4ECDC4',tenure:'1 ANO 3 MESES',score:5.0,incr_pct:0.0,incr_val:0,ruc_pct:0.0,ruc_n:0,qr_pct:0.0,qr_n:0,aris_pct:50.0,aris_val:120,badge:'EN DESARROLLO'},
-{pos:14,n:'ANA CARRERA',ini:'AC2',t:'SENIOR',col:'#A855F7',tenure:'1 ANO 3 MESES',score:3.3,incr_pct:0.0,incr_val:0,ruc_pct:0.0,ruc_n:0,qr_pct:33.3,qr_n:1,aris_pct:0.0,aris_val:0,badge:'EN DESARROLLO'},
-{pos:15,n:'KEVIN PAULINO',ini:'KP',t:'JUNIOR',col:'#06B6D4',tenure:'1 ANO 3 MESES',score:0.0,incr_pct:0.0,incr_val:0,ruc_pct:0.0,ruc_n:0,qr_pct:0.0,qr_n:0,aris_pct:0.0,aris_val:0,badge:'EN DESARROLLO'},
-{pos:16,n:'ROCK LLANOS',ini:'RL',t:'JUNIOR',col:'#84CC16',tenure:'1 ANO 3 MESES',score:0.0,incr_pct:0.0,incr_val:0,ruc_pct:0.0,ruc_n:0,qr_pct:0.0,qr_n:0,aris_pct:0.0,aris_val:0,badge:'EN DESARROLLO'},
+{pos:1,n:'ANDREA SOTO',ini:'AS',t:'SENIOR',col:'#FFD93D',tenure:'1 ANO 3 MESES',score:169.3,incr_pct:335.0,incr_val:938039,ruc_pct:233.3,ruc_n:7,qr_pct:133.3,qr_n:4,aris_pct:0.0,aris_val:0,plan_pct:0.0,plan_n:0,badge:'ENCAMINADO'},
+{pos:2,n:'PATRICIA ASTORGA',ini:'PA',t:'SENIOR',col:'#00E5A0',tenure:'1 ANO 3 MESES',score:164.3,incr_pct:403.0,incr_val:1128284,ruc_pct:100.0,ruc_n:3,qr_pct:33.3,qr_n:1,aris_pct:295.4,aris_val:709,plan_pct:50.0,plan_n:1,badge:'ENCAMINADO'},
+{pos:3,n:'ALICIA QUINONES',ini:'AQ',t:'SENIOR',col:'#FF8C42',tenure:'1 ANO 3 MESES',score:155.8,incr_pct:273.3,incr_val:765140,ruc_pct:133.3,ruc_n:4,qr_pct:33.3,qr_n:1,aris_pct:50.0,aris_val:120,plan_pct:0.0,plan_n:0,badge:'ENCAMINADO'},
+{pos:4,n:'MELISA LLACCHUAS',ini:'ML',t:'SENIOR',col:'#FF6B9D',tenure:'1 ANO 3 MESES',score:128.7,incr_pct:165.1,incr_val:462403,ruc_pct:100.0,ruc_n:3,qr_pct:66.7,qr_n:2,aris_pct:25.0,aris_val:60,plan_pct:0.0,plan_n:0,badge:'ENCAMINADO'},
+{pos:5,n:'CRISTIAN HUAMAN',ini:'CH',t:'JUNIOR',col:'#00C9FF',tenure:'1 ANO 3 MESES',score:72.8,incr_pct:55.0,incr_val:137483,ruc_pct:233.3,ruc_n:7,qr_pct:33.3,qr_n:1,aris_pct:66.7,aris_val:120,plan_pct:0.0,plan_n:0,badge:'ENCAMINADO'},
+{pos:6,n:'ANALIZ CASTILLO',ini:'AC',t:'SENIOR',col:'#F59E0B',tenure:'1 ANO 3 MESES',score:68.8,incr_pct:53.2,incr_val:149098,ruc_pct:100.0,ruc_n:3,qr_pct:100.0,qr_n:3,aris_pct:175.0,aris_val:420,plan_pct:0.0,plan_n:0,badge:'ENCAMINADO'},
+{pos:7,n:'YASMIN CHECA',ini:'YC',t:'JUNIOR',col:'#888780',tenure:'1 ANO 3 MESES',score:63.0,incr_pct:96.9,incr_val:242198,ruc_pct:0.0,ruc_n:0,qr_pct:0.0,qr_n:0,aris_pct:0.0,aris_val:0,plan_pct:0.0,plan_n:0,badge:'ENCAMINADO'},
+{pos:8,n:'ROSA TORRES',ini:'RT',t:'SENIOR',col:'#6BCF7F',tenure:'1 ANO 3 MESES',score:58.1,incr_pct:28.9,incr_val:81048,ruc_pct:333.3,ruc_n:10,qr_pct:33.3,qr_n:1,aris_pct:100.0,aris_val:240,plan_pct:0.0,plan_n:0,badge:'ENCAMINADO'},
+{pos:9,n:'FRANCO ROUILLON',ini:'FR',t:'JUNIOR',col:'#F97316',tenure:'1 ANO 3 MESES',score:43.2,incr_pct:25.0,incr_val:62599,ruc_pct:133.3,ruc_n:4,qr_pct:100.0,qr_n:3,aris_pct:0.0,aris_val:0,plan_pct:0.0,plan_n:0,badge:'EN DESARROLLO'},
+{pos:10,n:'KEVIN PAULINO',ini:'KP',t:'JUNIOR',col:'#06B6D4',tenure:'1 ANO 3 MESES',score:35.8,incr_pct:32.0,incr_val:80121,ruc_pct:100.0,ruc_n:3,qr_pct:0.0,qr_n:0,aris_pct:0.0,aris_val:0,plan_pct:0.0,plan_n:0,badge:'EN DESARROLLO'},
+{pos:11,n:'MARIA FLORES',ini:'MF',t:'JUNIOR',col:'#EC4899',tenure:'1 ANO 3 MESES',score:34.9,incr_pct:12.2,incr_val:30596,ruc_pct:133.3,ruc_n:4,qr_pct:0.0,qr_n:0,aris_pct:100.0,aris_val:180,plan_pct:0.0,plan_n:0,badge:'EN DESARROLLO'},
+{pos:12,n:'OLIVER LOPEZ',ini:'OL',t:'SENIOR',col:'#4ECDC4',tenure:'1 ANO 3 MESES',score:34.0,incr_pct:0.0,incr_val:0,ruc_pct:133.3,ruc_n:4,qr_pct:0.0,qr_n:0,aris_pct:225.0,aris_val:540,plan_pct:0.0,plan_n:0,badge:'EN DESARROLLO'},
+{pos:13,n:'MELISSA VASQUEZ',ini:'MV',t:'SENIOR',col:'#FF6B6B',tenure:'1 ANO 3 MESES',score:22.3,incr_pct:0.0,incr_val:0,ruc_pct:133.3,ruc_n:4,qr_pct:33.3,qr_n:1,aris_pct:0.0,aris_val:0,plan_pct:0.0,plan_n:0,badge:'EN DESARROLLO'},
+{pos:14,n:'LEONARDO TELLO',ini:'LT',t:'JUNIOR',col:'#8B5CF6',tenure:'1 ANO 3 MESES',score:11.2,incr_pct:0.0,incr_val:0,ruc_pct:0.0,ruc_n:0,qr_pct:0.0,qr_n:0,aris_pct:160.6,aris_val:289,plan_pct:0.0,plan_n:0,badge:'EN DESARROLLO'},
+{pos:15,n:'ROCK LLANOS',ini:'RL',t:'JUNIOR',col:'#84CC16',tenure:'1 ANO 3 MESES',score:10.0,incr_pct:0.0,incr_val:0,ruc_pct:66.7,ruc_n:2,qr_pct:0.0,qr_n:0,aris_pct:0.0,aris_val:0,plan_pct:0.0,plan_n:0,badge:'EN DESARROLLO'},
+{pos:16,n:'ANA CARRERA',ini:'AC2',t:'SENIOR',col:'#A855F7',tenure:'1 ANO 3 MESES',score:0.0,incr_pct:0.0,incr_val:0,ruc_pct:0.0,ruc_n:0,qr_pct:0.0,qr_n:0,aris_pct:0.0,aris_val:0,plan_pct:0.0,plan_n:0,badge:'EN DESARROLLO'},
 ];
 
 
@@ -1471,10 +1471,10 @@ function bP1(){
   var _ruc_may_tot=_sum(_ruc_may_h);
   var _ruc_abr_tot=_ruc_tot-_ruc_may_tot;
   // Ana Carrera no está en array de 14 — corregir totales globales
-  if(_t==='all'){_ruc_tot=34;_ruc_may_tot=0;_ruc_abr_tot=34;}
+  if(_t==='all'){_ruc_tot=58;_ruc_may_tot=0;_ruc_abr_tot=58;}
   if(_t==='all')_qr_tot=19;
   if(_t==='carlos'){_ruc_tot=0;_ruc_may_tot=0;_ruc_abr_tot=0;}
-  if(_t==='ana'){_ruc_tot=34;_ruc_may_tot=0;_ruc_abr_tot=34;}
+  if(_t==='ana'){_ruc_tot=58;_ruc_may_tot=0;_ruc_abr_tot=58;}
   var _aris_tot=_sum(_aris_h);
   var _aris_lic_tot=(_t==='all'?3:(_t==='carlos'?3:0));
 
@@ -1870,13 +1870,19 @@ function bP2(){
     // Arisale — calcula % desde aris_val
     const aq    = AQ[h.n]||180;
     const apct  = aq>0?Math.round(h.aris_val/aq*1000)/10:0;
-    const allMet=(cpct>=100&&rpct>=100&&qpct>=100&&apct>=100);const bHtml=allMet?'<div class="top-badge">TOP PERFORMER</div>':'';
     const abw   = Math.min(100,apct);
     const acol  = barColor(apct,COL_ARS);
     const albl  = h.t==='SENIOR'?'S/.240':'S/.180';
 
-    // Score recalculado
-    const sc = Math.round((0.7*Math.min(200,cpct)+0.1*Math.min(200,rpct)+0.1*Math.min(200,qpct)+0.1*Math.min(200,apct))*10)/10;
+    // Planillas — calcula % desde plan_n
+    const ppct  = h.plan_n!=null?Math.round((h.plan_n||0)/2*1000)/10:0;
+    const pbw   = Math.min(100,ppct);
+    const pcol  = barColor(ppct,'#8B5CF6');
+
+    const allMet=(cpct>=100&&rpct>=100&&qpct>=100&&apct>=100);const bHtml=allMet?'<div class="top-badge">TOP PERFORMER</div>':'';
+
+    // Score recalculado con nueva fórmula
+    const sc = Math.round((0.65*Math.min(200,cpct)+0.15*Math.min(200,rpct)+0.07*Math.min(200,qpct)+0.07*Math.min(200,apct)+0.06*Math.min(200,ppct))*10)/10;
 
     return `<div class="${cls}">
       ${bHtml}
@@ -1896,22 +1902,28 @@ function bP2(){
           <div class="rmbar"><div class="rmfill" style="width:${cbw}%;background:${ccol}"></div></div>
         </div>
         <div class="rm">
-          <div class="rmlbl" style="color:${COL_RUC}">RUC Mayo</div>
+          <div class="rmlbl" style="color:${COL_RUC}">RUC Junio</div>
           <div class="rmpct" style="color:${rcol}">${pctFmt(rpct)}</div>
           <div class="rmval">${h.ruc_n} nuevos / cuota: 3</div>
           <div class="rmbar"><div class="rmfill" style="width:${rbw}%;background:${rcol}"></div></div>
         </div>
         <div class="rm">
-          <div class="rmlbl" style="color:${COL_QR}">QR Mayo</div>
+          <div class="rmlbl" style="color:${COL_QR}">QR Junio</div>
           <div class="rmpct" style="color:${qcol}">${pctFmt(qpct)}</div>
           <div class="rmval">${h.qr_n} activos / cuota: 3</div>
           <div class="rmbar"><div class="rmfill" style="width:${qbw}%;background:${qcol}"></div></div>
         </div>
         <div class="rm">
-          <div class="rmlbl" style="color:${COL_ARS}">Arisale Mayo</div>
+          <div class="rmlbl" style="color:${COL_ARS}">Arisale Junio</div>
           <div class="rmpct" style="color:${acol}">${pctFmt(apct)}</div>
           <div class="rmval">${h.aris_val>0?fmt(h.aris_val):'S/.0'} / cuota: ${albl}</div>
           <div class="rmbar"><div class="rmfill" style="width:${abw}%;background:${acol}"></div></div>
+        </div>
+        <div class="rm">
+          <div class="rmlbl" style="color:#8B5CF6">Planillas Junio</div>
+          <div class="rmpct" style="color:${pcol}">${pctFmt(ppct)}</div>
+          <div class="rmval">${h.plan_n||0} planillas / cuota: 2</div>
+          <div class="rmbar"><div class="rmfill" style="width:${pbw}%;background:${pcol}"></div></div>
         </div>
       </div>
     </div>`;
@@ -2592,7 +2604,7 @@ function bP9(){
   if(_f)_f.textContent=_fd.length+" oportunidades · Total: "+_fm(_tot);
 }
 
-var PAGES={pC:{title:'Cosechas Mayo 2026',sub:'Sin Restas · Dia 305 · Real vs Proyectado',build:bPC}, p1:{title:'Resumen general',sub:'Corte al 30 de Junio 2026 · Dia 30',build:bP1},p2:{title:'Ranking — Solo Junio 2026',sub:'Captura 70% + RUC 10% + QR 10% + Arisale 10% — Dia 30 Junio 2026 — 15 hunters',build:bP2},p3:{title:'5 graficos de lineas por mes',sub:'Enero   Febrero   Marzo   Abril   Mayo',build:bP3},p4:{title:'Curva Mayo   Dia 305',sub:'Real dia 305   Proy S/.3,494K',build:bP4},p5:{title:'Arisale   Solo Junio 2026',sub:'76 lic   S/.2836   Cuota S/.3,234',build:bP5},p6:{title:'QR Parlante   Solo Junio 2026',sub:'4 nuevos mayo   41 activos total   19 pendientes',build:bP6},p7:{title:'Cuentas — Junio 2026',sub:'Mar · Abr-30 · May-31 · Jun-30 · 135 cuentas',build:function(){try{updCC();}catch(e){}try{rC();}catch(e){}}},p8:{title:'RUC Nuevos   Solo Junio 2026',sub:'30 RUC   Cuota 44   Dia 305   Proy S/.673K',build:bP8},p9:{title:'Funnel — Pipeline Junio 2026',sub:'87 oportunidades · S/.12,540,000 potencial · Dia 30 Junio',build:bP9},
+var PAGES={pC:{title:'Cosechas Mayo 2026',sub:'Sin Restas · Dia 305 · Real vs Proyectado',build:bPC}, p1:{title:'Resumen general',sub:'Corte al 30 de Junio 2026 · Dia 30',build:bP1},p2:{title:'Ranking — Solo Junio 2026',sub:'Captura 65% + RUC 15% + QR 7% + Arisale 7% + Planillas 6% — Dia 30 Junio 2026 — 15 hunters',build:bP2},p3:{title:'5 graficos de lineas por mes',sub:'Enero   Febrero   Marzo   Abril   Mayo',build:bP3},p4:{title:'Curva Mayo   Dia 305',sub:'Real dia 305   Proy S/.3,494K',build:bP4},p5:{title:'Arisale   Solo Junio 2026',sub:'76 lic   S/.2836   Cuota S/.3,234',build:bP5},p6:{title:'QR Parlante   Solo Junio 2026',sub:'4 nuevos mayo   41 activos total   19 pendientes',build:bP6},p7:{title:'Cuentas — Junio 2026',sub:'Mar · Abr-30 · May-31 · Jun-30 · 135 cuentas',build:function(){try{updCC();}catch(e){}try{rC();}catch(e){}}},p8:{title:'RUC Nuevos   Solo Junio 2026',sub:'30 RUC   Cuota 44   Dia 305   Proy S/.673K',build:bP8},p9:{title:'Funnel — Pipeline Junio 2026',sub:'87 oportunidades · S/.12,540,000 potencial · Dia 30 Junio',build:bP9},
   pAbril:{title:'Dashboard Abril 2026',sub:'Cierre al 30 de Abril   Resumen   Ranking   Curva   Arisale   QR   Cuentas   RUC',build:function(){}}};
 var done={};
 function go(id,btn){
@@ -2613,19 +2625,81 @@ function go(id,btn){
 
 
 // -- P8 RUC JUNIO DIA 09 --
+var _rucDistData={labels:['ROSA TORRES', 'CRISTIAN HUAMAN', 'ANDREA SOTO', 'FRANCO ROUILLON', 'ALICIA QUINONES', 'OLIVER LOPEZ', 'MARIA FLORES', 'MELISSA VASQUEZ', 'ANALIZ CASTILLO', 'MELISA LLACCHUAS', 'KEVIN PAULINO', 'PATRICIA ASTORGA', 'ROCK LLANOS'],counts:[10, 7, 7, 4, 4, 4, 4, 4, 3, 3, 3, 3, 2],colors:['#6BCF7F', '#00C9FF', '#FFD93D', '#F97316', '#FF8C42', '#4ECDC4', '#EC4899', '#FF6B6B', '#F59E0B', '#FF6B9D', '#06B6D4', '#00E5A0', '#84CC16']};
+    var _lt25Data=[
+    {h:'ALICIA QUINONES',col:'#FF8C42',r:'TRIPLE A GROUP SOCIEDAD ANONIMA CERRADA',ruc:'20611402768',proy:27153.5},
+    {h:'ROSA TORRES',col:'#6BCF7F',r:'The Ballroom Academy Asociacion Civil Sin Fines De',ruc:'20614927471',proy:0.0},
+    {h:'ANALIZ CASTILLO',col:'#F59E0B',r:'Consorcio De Cuidado Animal',ruc:'20616004205',proy:0.0},
+    {h:'ROCK LLANOS',col:'#84CC16',r:'INVERSIONES KYC EIRL',ruc:'20613065050',proy:0.0},
+    {h:'FRANCO ROUILLON',col:'#F97316',r:'RODRIGUEZ VALDERRAMA SANTOS SANTIAGO',ruc:'10195746601',proy:513.15},
+    {h:'FRANCO ROUILLON',col:'#F97316',r:'TASAYCO AGUSTA MARCOS ANTONIO',ruc:'10074124742',proy:13622.73},
+    {h:'FRANCO ROUILLON',col:'#F97316',r:'Cristian Alexander Lopez Zevallos',ruc:'77699047',proy:110.0},
+    {h:'MELISA LLACCHUAS',col:'#FF6B9D',r:'FUTURE WAVE EIRL',ruc:'20612040878',proy:13177.76},
+    {h:'MARIA FLORES',col:'#EC4899',r:'Cam Y Tall Asociados E.I.R.L.',ruc:'20613861654',proy:0.0},
+    {h:'MARIA FLORES',col:'#EC4899',r:'TERNIUM',ruc:'20614864436',proy:2860.0},
+    {h:'FRANCO ROUILLON',col:'#F97316',r:'Condo Paniagua Juan Jose',ruc:'10439827675',proy:4.95},
+    {h:'ROCK LLANOS',col:'#84CC16',r:'MUNICIPALIDAD DISTRITAL DE SANTA MARIA',ruc:'20172318551',proy:0.0},
+    {h:'OLIVER LOPEZ',col:'#4ECDC4',r:'Sofinett S.A.C.',ruc:'20608566423',proy:2.2},
+    {h:'OLIVER LOPEZ',col:'#4ECDC4',r:'R Y O LAB SOCIEDAD ANONIMA CERRADA R Y O LAB SAC',ruc:'20608981102',proy:0.0},
+    {h:'KEVIN PAULINO',col:'#06B6D4',r:'Latente Cafe De Especialidad Sociedad Anonima Cerr',ruc:'20612095796',proy:2.2},
+    {h:'ANDREA SOTO',col:'#FFD93D',r:'INVERSIONES 74 S.A.C.',ruc:'20555693983',proy:22895.73},
+    {h:'ANDREA SOTO',col:'#FFD93D',r:'TAXE SAC',ruc:'20499282622',proy:8583.75},
+    {h:'MARIA FLORES',col:'#EC4899',r:'Alvarado Correa Maria Paulina',ruc:'10402884172',proy:1.1},
+    {h:'KEVIN PAULINO',col:'#06B6D4',r:'Reserva Cafe De Especialidad S.A.C',ruc:'20611771445',proy:1.1},
+    {h:'ANDREA SOTO',col:'#FFD93D',r:'SAFER S.R.L.',ruc:'20461009990',proy:18670.36},
+    {h:'ANDREA SOTO',col:'#FFD93D',r:'CAFE PALERMO SAC',ruc:'20606520655',proy:10812.5},
+    {h:'ANDREA SOTO',col:'#FFD93D',r:'INVERSIONES REALNA SAC',ruc:'20611436786',proy:12205.22},
+    {h:'ALICIA QUINONES',col:'#FF8C42',r:'WOSAK SAC',ruc:'20547709013',proy:0.0},
+    {h:'ROSA TORRES',col:'#6BCF7F',r:'DYNAMIC MOTORS E.I.R.L',ruc:'20602789749',proy:0.0},
+    {h:'ROSA TORRES',col:'#6BCF7F',r:'BEIT GROUP PERU S.A.C. - PILLIN',ruc:'20605867163',proy:0.0},
+    {h:'MELISSA VASQUEZ',col:'#FF6B6B',r:'CIUDADOMUJER SAC',ruc:'20613034031',proy:19078.98},
+    {h:'MELISSA VASQUEZ',col:'#FF6B6B',r:'M Y M MULTISERVICIOS AUDIOVISUALES E.I.R.L.',ruc:'20615329551',proy:0.0},
+    {h:'MELISSA VASQUEZ',col:'#FF6B6B',r:'Importaciones Import Export Leo E.I.R.L.',ruc:'20610272291',proy:1.1},
+    {h:'MELISA LLACCHUAS',col:'#FF6B9D',r:'Importaciones Y Distribuciones Once Sociedad Anoni',ruc:'20610620052',proy:0.0},
+    {h:'CRISTIAN HUAMAN',col:'#00C9FF',r:'Ojeda Garcia Junior Elvis',ruc:'10722541192',proy:13805.04},
+    {h:'CRISTIAN HUAMAN',col:'#00C9FF',r:'Sanchez Vasquez Daniel Alberto',ruc:'10736013717',proy:4987.58},
+    {h:'ROSA TORRES',col:'#6BCF7F',r:'INVERSIONES LA RESTINGA E.I.R.L.',ruc:'20493489161',proy:0.0},
+    {h:'ROSA TORRES',col:'#6BCF7F',r:'PASAMANERIA LA RESTINGA E.I.R.L.',ruc:'20493593065',proy:0.0},
+    {h:'ROSA TORRES',col:'#6BCF7F',r:'LIBRERIA LA RESTINGA E.I.R.L.',ruc:'20493627903',proy:0.0},
+    {h:'ROSA TORRES',col:'#6BCF7F',r:'LA SACARITA EIRL',ruc:'20567219594',proy:0.0},
+    {h:'ROSA TORRES',col:'#6BCF7F',r:'COMERCIALIZADORA LA RESTINGA E.I.R.L.',ruc:'20528346864',proy:0.0},
+    {h:'MELISA LLACCHUAS',col:'#FF6B9D',r:'LEADER PERU GROUP SAC',ruc:'20609345935',proy:0.0},
+    {h:'CRISTIAN HUAMAN',col:'#00C9FF',r:'Vasquez Culqui Mary Anita',ruc:'10456923491',proy:0.0},
+    {h:'PATRICIA ASTORGA',col:'#00E5A0',r:'La Estacion G E.I.R.L.',ruc:'20616074963',proy:0.0},
+    {h:'ANDREA SOTO',col:'#FFD93D',r:'SAORI CLEAN CARE EIRL',ruc:'20611309318',proy:1393.14},
+    {h:'ANDREA SOTO',col:'#FFD93D',r:'Benavente Cordova Bencor',ruc:'10465138586',proy:19951.8},
+    {h:'CRISTIAN HUAMAN',col:'#00C9FF',r:'Diaz Vasquez Olga Marina',ruc:'10450430124',proy:25651.59},
+    {h:'OLIVER LOPEZ',col:'#4ECDC4',r:'VIVEROS UNIDOS EMPRESA INDIVIDUAL DE RESPONSABILIDAD LIMITAD',ruc:'20603203098',proy:0.0},
+    {h:'OLIVER LOPEZ',col:'#4ECDC4',r:'FLOWERTEC E.I.R.L.',ruc:'20605109048',proy:3.43},
+    {h:'MARIA FLORES',col:'#EC4899',r:'Restfont Group S.A.C.',ruc:'20613882619',proy:22117.37},
+    {h:'CRISTIAN HUAMAN',col:'#00C9FF',r:'Rios Panaifo Jessica Marisol',ruc:'10415004953',proy:1322.2},
+    {h:'CRISTIAN HUAMAN',col:'#00C9FF',r:'Salvatierra Arevalo Carmen Kiara',ruc:'10633534981',proy:66.0},
+    {h:'MELISSA VASQUEZ',col:'#FF6B6B',r:'NOVA TEXTIL/NOVATEX E.I.R.L.',ruc:'20615675891',proy:0.0},
+  ];
 function bP8(){
-  var _src=typeof RUC_META!=='undefined'?RUC_META:[];
-  var _ruc=_src.filter(function(r){return r.ruc>0 && inTeam(r.n);});
   var _rhf=document.getElementById("rucHFilt");
-  if(_rhf&&_rhf.value)_ruc=_ruc.filter(function(r){return r.n===_rhf.value;});
-  var _total=_ruc.length;
   var _el=function(id){return document.getElementById(id);};
+  var _t=typeof currentTeam!=='undefined'?currentTeam:'all';
+
+  // KPI hardcoded values per team
+  var _totMap={all:58,carlos:24,ana:34};
+  var _ge25Map={all:8,carlos:4,ana:4};
+  var _lt25Map={all:50,carlos:20,ana:30};
+  var _total=_totMap[_t]||58;
+  var _ge25=_ge25Map[_t]||8;
+  var _lt25=_lt25Map[_t]||50;
+
   if(_el('k8total'))_el('k8total').textContent=_total;
-  if(_el('k8ok'))_el('k8ok').textContent=_total;
-  if(_el('k8okpct'))_el('k8okpct').textContent=Math.round(_total/3*100)+'%';
-  if(_el('k8nok'))_el('k8nok').textContent=0;
+  if(_el('k8ok'))_el('k8ok').textContent=_ge25;
+  if(_el('k8okpct'))_el('k8okpct').textContent=Math.round(_ge25/_total*100)+'%';
+  if(_el('k8nok'))_el('k8nok').textContent=_lt25;
   if(_el('k8proy'))_el('k8proy').textContent=Math.round(_total/42*100)+'%';
   if(_el('k8real'))_el('k8real').textContent='Real: '+_total+' RUC · Dia 30 Jun';
+
+  // Progress by hunter using RUC_META
+  var _src=typeof RUC_META!=='undefined'?RUC_META:[];
+  var _ruc=_src.filter(function(r){return r.ruc>0 && inTeam(r.n);});
+  if(_rhf&&_rhf.value)_ruc=_ruc.filter(function(r){return r.n===_rhf.value;});
   if(_el('rucMeta'))_el('rucMeta').innerHTML=_ruc.map(function(r){
     var pct=Math.min(100,Math.round(r.ruc/3*100));
     var col=pct>=100?'#00E5A0':pct>=66?'#F59E0B':'#EF4444';
@@ -2639,137 +2713,143 @@ function bP8(){
       +'<div style="width:'+pct+'%;height:100%;background:'+col+';border-radius:3px"></div></div>'
       +'<div style="font-size:9px;color:var(--t3)">'+(pct>=100?'Meta cumplida ✅':'Faltan '+(3-Math.min(3,r.ruc)))+'</div></div>';
   }).join('');
-      var _rucData=[
-    {h:'ALICIA QUINONES',col:'#FF8C42',r:'TRIPLE A GROUP SOCIEDAD ANONIMA CERRADA',banco:'IBK',ruc:'20611402768',m1:'NO',m0:'NO',pot:30000,proy:0},
-    {h:'ROSA TORRES',col:'#6BCF7F',r:'The Ballroom Academy Asociacion Civil Sin Fines De',banco:'IBK',ruc:'20614927471',m1:'NO',m0:'NO',pot:30000,proy:0},
-    {h:'ANALIZ CASTILLO',col:'#F59E0B',r:'Consorcio De Cuidado Animal',banco:'IBK',ruc:'20616004205',m1:'NO',m0:'NO',pot:30000,proy:0},
-    {h:'PATRICIA ASTORGA',col:'#00E5A0',r:'ENCINITAS GP S.A.C.',banco:'IBK',ruc:'20611292865',m1:'NO',m0:'NO',pot:30000,proy:0},
-    {h:'ALICIA QUINONES',col:'#FF8C42',r:'ABU ABU SAC',banco:'IBK',ruc:'20609188732',m1:'NO',m0:'NO',pot:30000,proy:0},
-    {h:'ROCK LLANOS',col:'#84CC16',r:'INVERSIONES KYC EIRL',banco:'IBK',ruc:'20613065050',m1:'NO',m0:'NO',pot:30000,proy:0},
-    {h:'FRANCO ROUILLON',col:'#F97316',r:'RODRIGUEZ VALDERRAMA SANTOS SANTIAGO',banco:'IBK',ruc:'10195746601',m1:'NO',m0:'NO',pot:30000,proy:0},
-    {h:'FRANCO ROUILLON',col:'#F97316',r:'TASAYCO AGUSTA MARCOS ANTONIO',banco:'IBK',ruc:'10074124742',m1:'NO',m0:'NO',pot:30000,proy:0},
-    {h:'FRANCO ROUILLON',col:'#F97316',r:'Cristian Alexander Lopez Zevallos',banco:'IBK',ruc:'77699047',m1:'NO',m0:'NO',pot:30000,proy:0},
-    {h:'MELISA LLACCHUAS',col:'#FF6B9D',r:'FUTURE WAVE EIRL',banco:'IBK',ruc:'20612040878',m1:'NO',m0:'NO',pot:30000,proy:0},
-    {h:'MARIA FLORES',col:'#EC4899',r:'Cam Y Tall Asociados E.I.R.L.',banco:'IBK',ruc:'20613861654',m1:'NO',m0:'NO',pot:30000,proy:0},
-    {h:'MARIA FLORES',col:'#EC4899',r:'TERNIUM',banco:'IBK',ruc:'20614864436',m1:'NO',m0:'NO',pot:30000,proy:0},
-    {h:'FRANCO ROUILLON',col:'#F97316',r:'Condo Paniagua Juan Jose',banco:'IBK',ruc:'10439827675',m1:'NO',m0:'NO',pot:30000,proy:0},
-    {h:'ROCK LLANOS',col:'#84CC16',r:'MUNICIPALIDAD DISTRITAL DE SANTA MARIA',banco:'IBK',ruc:'20172318551',m1:'NO',m0:'NO',pot:30000,proy:0},
-    {h:'OLIVER LOPEZ',col:'#4ECDC4',r:'Sofinett S.A.C.',banco:'IBK',ruc:'20608566423',m1:'NO',m0:'NO',pot:30000,proy:0},
-    {h:'OLIVER LOPEZ',col:'#4ECDC4',r:'R Y O LAB SOCIEDAD ANONIMA CERRADA R Y O LAB SAC',banco:'IBK',ruc:'20608981102',m1:'NO',m0:'NO',pot:30000,proy:0},
-    {h:'KEVIN PAULINO',col:'#06B6D4',r:'Latente Cafe De Especialidad Sociedad Anonima Cerr',banco:'IBK',ruc:'20612095796',m1:'NO',m0:'NO',pot:30000,proy:0},
-    {h:'ROSA TORRES',col:'#6BCF7F',r:'INCOAZE S.A.C.',banco:'IBK',ruc:'20557683829',m1:'NO',m0:'NO',pot:30000,proy:0},
-    {h:'ANDREA SOTO',col:'#FFD93D',r:'INVERSIONES 74 S.A.C.',banco:'IBK',ruc:'20555693983',m1:'NO',m0:'NO',pot:30000,proy:0},
-    {h:'ANDREA SOTO',col:'#FFD93D',r:'TAXE SAC',banco:'IBK',ruc:'20499282622',m1:'NO',m0:'NO',pot:30000,proy:0},
-    {h:'MARIA FLORES',col:'#EC4899',r:'Alvarado Correa Maria Paulina',banco:'IBK',ruc:'10402884172',m1:'NO',m0:'NO',pot:30000,proy:0},
-    {h:'KEVIN PAULINO',col:'#06B6D4',r:'Reserva Cafe De Especialidad S.A.C',banco:'IBK',ruc:'20611771445',m1:'NO',m0:'NO',pot:30000,proy:0},
-    {h:'ANDREA SOTO',col:'#FFD93D',r:'SAFER S.R.L.',banco:'IBK',ruc:'20461009990',m1:'NO',m0:'NO',pot:30000,proy:0},
-    {h:'ANDREA SOTO',col:'#FFD93D',r:'CAFE PALERMO SAC',banco:'IBK',ruc:'20606520655',m1:'NO',m0:'NO',pot:30000,proy:0},
-    {h:'ANDREA SOTO',col:'#FFD93D',r:'INVERSIONES REALNA SAC',banco:'IBK',ruc:'20611436786',m1:'NO',m0:'NO',pot:30000,proy:0},
-    {h:'ANALIZ CASTILLO',col:'#F59E0B',r:'GRUPO IVALE S.A.C.',banco:'IBK',ruc:'20611541172',m1:'NO',m0:'NO',pot:30000,proy:0},
-    {h:'ALICIA QUINONES',col:'#FF8C42',r:'WOSAK SAC',banco:'IBK',ruc:'20547709013',m1:'NO',m0:'NO',pot:30000,proy:0},
-    {h:'ROSA TORRES',col:'#6BCF7F',r:'DYNAMIC MOTORS E.I.R.L',banco:'IBK',ruc:'20602789749',m1:'NO',m0:'NO',pot:30000,proy:0},
-    {h:'ALICIA QUINONES',col:'#FF8C42',r:'Creatividad En Alimentos S.A.C',banco:'IBK',ruc:'20610417486',m1:'NO',m0:'NO',pot:30000,proy:0},
-    {h:'KEVIN PAULINO',col:'#06B6D4',r:'FB IMPORTACIONES COMPANY EMPRESA INDIVIDUAL DE RESPONSABILIDAD LIMITADA',banco:'IBK',ruc:'20615065022',m1:'NO',m0:'NO',pot:30000,proy:0},
-    {h:'ROSA TORRES',col:'#6BCF7F',r:'BEIT GROUP PERU S.A.C. - PILLIN',banco:'IBK',ruc:'20605867163',m1:'NO',m0:'NO',pot:30000,proy:0},
-    {h:'MELISSA VASQUEZ',col:'#FF6B6B',r:'CIUDADOMUJER SAC',banco:'IBK',ruc:'20613034031',m1:'NO',m0:'NO',pot:30000,proy:0},
-    {h:'ANALIZ CASTILLO',col:'#F59E0B',r:'BRISA ASOCIADOS S.A.C.',banco:'IBK',ruc:'20605268812',m1:'NO',m0:'NO',pot:30000,proy:0},
-    {h:'MELISSA VASQUEZ',col:'#FF6B6B',r:'NOVA TEXTIL/NOVATEX E.I.R.L.',banco:'IBK',ruc:'20615675891',m1:'NO',m0:'NO',pot:30000,proy:0},
+              var _rucData=[
+    {h:'ALICIA QUINONES',col:'#FF8C42',r:'TRIPLE A GROUP SOCIEDAD ANONIMA CERRADA',banco:'IBK PRIVADA',ruc:'20611402768',m1:'NO',m0:'NO',pot:25000,jun:27153.5,proy:27153.5},
+    {h:'ROSA TORRES',col:'#6BCF7F',r:'The Ballroom Academy Asociacion Civil Sin Fines De',banco:'IBK PRIVADA',ruc:'20614927471',m1:'NO',m0:'NO',pot:50000,jun:0.0,proy:0.0},
+    {h:'ANALIZ CASTILLO',col:'#F59E0B',r:'Consorcio De Cuidado Animal',banco:'IBK PRIVADA',ruc:'20616004205',m1:'NO',m0:'NO',pot:40000,jun:0.0,proy:0.0},
+    {h:'PATRICIA ASTORGA',col:'#00E5A0',r:'ENCINITAS GP S.A.C.',banco:'IBK PRIVADA',ruc:'20611292865',m1:'NO',m0:'SI',pot:200000,jun:55158.12,proy:51480.92},
+    {h:'ALICIA QUINONES',col:'#FF8C42',r:'ABU ABU SAC',banco:'IBK PRIVADA',ruc:'20609188732',m1:'NO',m0:'SI',pot:500000,jun:425283.61,proy:425283.61},
+    {h:'ROCK LLANOS',col:'#84CC16',r:'INVERSIONES KYC EIRL',banco:'IBK PRIVADA',ruc:'20613065050',m1:'NO',m0:'NO',pot:250000,jun:0.0,proy:0.0},
+    {h:'FRANCO ROUILLON',col:'#F97316',r:'RODRIGUEZ VALDERRAMA SANTOS SANTIAGO',banco:'IBK PRIVADA',ruc:'10195746601',m1:'NO',m0:'NO',pot:35000,jun:513.15,proy:513.15},
+    {h:'FRANCO ROUILLON',col:'#F97316',r:'TASAYCO AGUSTA MARCOS ANTONIO',banco:'IBK PRIVADA',ruc:'10074124742',m1:'NO',m0:'NO',pot:50000,jun:13622.73,proy:13622.73},
+    {h:'FRANCO ROUILLON',col:'#F97316',r:'Cristian Alexander Lopez Zevallos',banco:'IBK PRIVADA',ruc:'77699047',m1:'NO',m0:'NO',pot:30000,jun:110.0,proy:110.0},
+    {h:'MELISA LLACCHUAS',col:'#FF6B9D',r:'FUTURE WAVE EIRL',banco:'IBK PRIVADA',ruc:'20612040878',m1:'NO',m0:'NO',pot:100000,jun:14119.03,proy:13177.76},
+    {h:'MARIA FLORES',col:'#EC4899',r:'Cam Y Tall Asociados E.I.R.L.',banco:'BBVA',ruc:'20613861654',m1:'NO',m0:'NO',pot:80000,jun:0.0,proy:0.0},
+    {h:'MARIA FLORES',col:'#EC4899',r:'TERNIUM',banco:'IBK PRIVADA',ruc:'20614864436',m1:'NO',m0:'NO',pot:25000,jun:2860.0,proy:2860.0},
+    {h:'FRANCO ROUILLON',col:'#F97316',r:'Condo Paniagua Juan Jose',banco:'BCP',ruc:'10439827675',m1:'NO',m0:'NO',pot:50000,jun:4.95,proy:4.95},
+    {h:'ROCK LLANOS',col:'#84CC16',r:'MUNICIPALIDAD DISTRITAL DE SANTA MARIA',banco:'.INTERBANK',ruc:'20172318551',m1:'NO',m0:'NO',pot:100000,jun:0.0,proy:0.0},
+    {h:'OLIVER LOPEZ',col:'#4ECDC4',r:'Sofinett S.A.C.',banco:'IBK PRIVADA',ruc:'20608566423',m1:'NO',m0:'NO',pot:50000,jun:2.2,proy:2.2},
+    {h:'OLIVER LOPEZ',col:'#4ECDC4',r:'R Y O LAB SOCIEDAD ANONIMA CERRADA R Y O LAB SAC',banco:'IBK PRIVADA',ruc:'20608981102',m1:'NO',m0:'NO',pot:50000,jun:0.0,proy:0.0},
+    {h:'KEVIN PAULINO',col:'#06B6D4',r:'Latente Cafe De Especialidad Sociedad Anonima Cerr',banco:'IBK PRIVADA',ruc:'20612095796',m1:'NO',m0:'NO',pot:70000,jun:2.2,proy:2.2},
+    {h:'ROSA TORRES',col:'#6BCF7F',r:'INCOAZE S.A.C.',banco:'IBK PRIVADA',ruc:'20557683829',m1:'NO',m0:'SI',pot:100000,jun:83770.97,proy:78186.24},
+    {h:'ANDREA SOTO',col:'#FFD93D',r:'INVERSIONES 74 S.A.C.',banco:'SCOTIABANK',ruc:'20555693983',m1:'NO',m0:'NO',pot:50000,jun:22895.73,proy:22895.73},
+    {h:'ANDREA SOTO',col:'#FFD93D',r:'TAXE SAC',banco:'SCOTIABANK',ruc:'20499282622',m1:'NO',m0:'NO',pot:80000,jun:9196.88,proy:8583.75},
+    {h:'MARIA FLORES',col:'#EC4899',r:'Alvarado Correa Maria Paulina',banco:'IBK PRIVADA',ruc:'10402884172',m1:'NO',m0:'NO',pot:30000,jun:1.1,proy:1.1},
+    {h:'KEVIN PAULINO',col:'#06B6D4',r:'Reserva Cafe De Especialidad S.A.C',banco:'IBK PRIVADA',ruc:'20611771445',m1:'NO',m0:'NO',pot:70000,jun:1.1,proy:1.1},
+    {h:'ANDREA SOTO',col:'#FFD93D',r:'SAFER S.R.L.',banco:'.INTERBANK',ruc:'20461009990',m1:'NO',m0:'NO',pot:80000,jun:18670.36,proy:18670.36},
+    {h:'ANDREA SOTO',col:'#FFD93D',r:'CAFE PALERMO SAC',banco:'BCP',ruc:'20606520655',m1:'NO',m0:'NO',pot:80000,jun:10812.5,proy:10812.5},
+    {h:'ANDREA SOTO',col:'#FFD93D',r:'INVERSIONES REALNA SAC',banco:'SBP',ruc:'20611436786',m1:'NO',m0:'NO',pot:80000,jun:12205.22,proy:12205.22},
+    {h:'ANALIZ CASTILLO',col:'#F59E0B',r:'GRUPO IVALE S.A.C.',banco:'BCP',ruc:'20611541172',m1:'NO',m0:'SI',pot:400000,jun:278991.56,proy:278991.56},
+    {h:'ALICIA QUINONES',col:'#FF8C42',r:'WOSAK SAC',banco:'IBK PRIVADA',ruc:'20547709013',m1:'NO',m0:'NO',pot:600000,jun:0.0,proy:0.0},
+    {h:'ROSA TORRES',col:'#6BCF7F',r:'DYNAMIC MOTORS E.I.R.L',banco:'BCP',ruc:'20602789749',m1:'NO',m0:'NO',pot:25000,jun:0.0,proy:0.0},
+    {h:'ALICIA QUINONES',col:'#FF8C42',r:'Creatividad En Alimentos S.A.C',banco:'IBK PRIVADA',ruc:'20610417486',m1:'NO',m0:'SI',pot:80000,jun:53418.99,proy:53418.99},
+    {h:'KEVIN PAULINO',col:'#06B6D4',r:'FB IMPORTACIONES COMPANY EMPRESA INDIVIDUAL DE RESPONSABILIDAD LIMITADA',banco:'BCP',ruc:'20615065022',m1:'NO',m0:'SI',pot:80000,jun:80117.43,proy:80117.43},
+    {h:'ROSA TORRES',col:'#6BCF7F',r:'BEIT GROUP PERU S.A.C. - PILLIN',banco:'IBK PRIVADA',ruc:'20605867163',m1:'NO',m0:'NO',pot:25000,jun:0.0,proy:0.0},
+    {h:'MELISSA VASQUEZ',col:'#FF6B6B',r:'CIUDADOMUJER SAC',banco:'BBVA',ruc:'20613034031',m1:'NO',m0:'NO',pot:30000,jun:19078.98,proy:19078.98},
+    {h:'ANALIZ CASTILLO',col:'#F59E0B',r:'BRISA ASOCIADOS S.A.C.',banco:'BCP',ruc:'20605268812',m1:'NO',m0:'SI',pot:130000,jun:147093.21,proy:147093.21},
+    {h:'MELISSA VASQUEZ',col:'#FF6B6B',r:'M Y M MULTISERVICIOS AUDIOVISUALES E.I.R.L.',banco:'BCP',ruc:'20615329551',m1:'NO',m0:'NO',pot:100000,jun:0.0,proy:0.0},
+    {h:'PATRICIA ASTORGA',col:'#00E5A0',r:'Mrj Events Sociedad Anonima Cerrada',banco:'IBK PRIVADA',ruc:'20615654702',m1:'NO',m0:'SI',pot:50000,jun:28886.55,proy:28886.55},
+    {h:'MELISSA VASQUEZ',col:'#FF6B6B',r:'Importaciones Import Export Leo E.I.R.L.',banco:'IBK PRIVADA',ruc:'20610272291',m1:'NO',m0:'NO',pot:100000,jun:1.1,proy:1.1},
+    {h:'MELISA LLACCHUAS',col:'#FF6B9D',r:'Importaciones Y Distribuciones Once Sociedad Anoni',banco:'IBK PRIVADA',ruc:'20610620052',m1:'NO',m0:'NO',pot:50000,jun:0.0,proy:0.0},
+    {h:'CRISTIAN HUAMAN',col:'#00C9FF',r:'Ojeda Garcia Junior Elvis',banco:'IBK PRIVADA',ruc:'10722541192',m1:'NO',m0:'NO',pot:40000,jun:13805.04,proy:13805.04},
+    {h:'CRISTIAN HUAMAN',col:'#00C9FF',r:'Sanchez Vasquez Daniel Alberto',banco:'IBK PRIVADA',ruc:'10736013717',m1:'NO',m0:'NO',pot:35000,jun:4987.58,proy:4987.58},
+    {h:'ROSA TORRES',col:'#6BCF7F',r:'INVERSIONES LA RESTINGA E.I.R.L.',banco:'BCP',ruc:'20493489161',m1:'NO',m0:'NO',pot:90000,jun:0.0,proy:0.0},
+    {h:'ROSA TORRES',col:'#6BCF7F',r:'PASAMANERIA LA RESTINGA E.I.R.L.',banco:'BCP',ruc:'20493593065',m1:'NO',m0:'NO',pot:50000,jun:0.0,proy:0.0},
+    {h:'ROSA TORRES',col:'#6BCF7F',r:'LIBRERIA LA RESTINGA E.I.R.L.',banco:'BCP',ruc:'20493627903',m1:'NO',m0:'NO',pot:65000,jun:0.0,proy:0.0},
+    {h:'ROSA TORRES',col:'#6BCF7F',r:'LA SACARITA EIRL',banco:'BCP',ruc:'20567219594',m1:'NO',m0:'NO',pot:50000,jun:0.0,proy:0.0},
+    {h:'ROSA TORRES',col:'#6BCF7F',r:'COMERCIALIZADORA LA RESTINGA E.I.R.L.',banco:'BCP',ruc:'20528346864',m1:'NO',m0:'NO',pot:80000,jun:0.0,proy:0.0},
+    {h:'MELISA LLACCHUAS',col:'#FF6B9D',r:'LEADER PERU GROUP SAC',banco:'IBK PRIVADA',ruc:'20609345935',m1:'NO',m0:'NO',pot:100000,jun:0.0,proy:0.0},
+    {h:'CRISTIAN HUAMAN',col:'#00C9FF',r:'Vasquez Culqui Mary Anita',banco:'IBK PRIVADA',ruc:'10456923491',m1:'NO',m0:'NO',pot:30000,jun:0.0,proy:0.0},
+    {h:'PATRICIA ASTORGA',col:'#00E5A0',r:'La Estacion G E.I.R.L.',banco:'BCP',ruc:'20616074963',m1:'NO',m0:'NO',pot:25000,jun:0.0,proy:0.0},
+    {h:'ROSA TORRES',col:'#6BCF7F',r:'AUTOPARTES IMPORTACION S.A.C.',banco:'IBK PRIVADA',ruc:'20600804791',m1:'NO',m0:'SI',pot:30000,jun:32745.95,proy:32745.95},
+    {h:'ANDREA SOTO',col:'#FFD93D',r:'SAORI CLEAN CARE EIRL',banco:'IBK PRIVADA',ruc:'20611309318',m1:'NO',m0:'NO',pot:25000,jun:1492.65,proy:1393.14},
+    {h:'CRISTIAN HUAMAN',col:'#00C9FF',r:'TERRONES TRUJILLO DORA GRACIELA',banco:'IBK PRIVADA',ruc:'15724324',m1:'NO',m0:'SI',pot:40000,jun:35370.08,proy:33012.08},
+    {h:'ANDREA SOTO',col:'#FFD93D',r:'Benavente Cordova Bencor',banco:'IBK PRIVADA',ruc:'10465138586',m1:'NO',m0:'NO',pot:25000,jun:19951.8,proy:19951.8},
+    {h:'CRISTIAN HUAMAN',col:'#00C9FF',r:'Diaz Vasquez Olga Marina',banco:'IBK PRIVADA',ruc:'10450430124',m1:'NO',m0:'NO',pot:25000,jun:25651.59,proy:25651.59},
+    {h:'OLIVER LOPEZ',col:'#4ECDC4',r:'VIVEROS UNIDOS EMPRESA INDIVIDUAL DE RESPONSABILIDAD LIMITAD',banco:'IBK PRIVADA',ruc:'20603203098',m1:'NO',m0:'NO',pot:100000,jun:0.0,proy:0.0},
+    {h:'OLIVER LOPEZ',col:'#4ECDC4',r:'FLOWERTEC E.I.R.L.',banco:'IBK PRIVADA',ruc:'20605109048',m1:'NO',m0:'NO',pot:100000,jun:3.67,proy:3.43},
+    {h:'MARIA FLORES',col:'#EC4899',r:'Restfont Group S.A.C.',banco:'IBK PRIVADA',ruc:'20613882619',m1:'NO',m0:'NO',pot:80000,jun:22117.37,proy:22117.37},
+    {h:'CRISTIAN HUAMAN',col:'#00C9FF',r:'Rios Panaifo Jessica Marisol',banco:'IBK PRIVADA',ruc:'10415004953',m1:'NO',m0:'NO',pot:30000,jun:1322.2,proy:1322.2},
+    {h:'CRISTIAN HUAMAN',col:'#00C9FF',r:'Salvatierra Arevalo Carmen Kiara',banco:'IBK PRIVADA',ruc:'10633534981',m1:'NO',m0:'NO',pot:30000,jun:66.0,proy:66.0},
+    {h:'MELISSA VASQUEZ',col:'#FF6B6B',r:'NOVA TEXTIL/NOVATEX E.I.R.L.',banco:'IBK PRIVADA',ruc:'20615675891',m1:'NO',m0:'NO',pot:100000,jun:0.0,proy:0.0},
   ];
+  // ── cRUCd bar chart ──────────────────────────────────────────────────────
+  dc('cRUCd');
+  var _rdEl=document.getElementById('cRUCd');
+  if(_rdEl && typeof _rucDistData!=='undefined'){
+    CHS['cRUCd']=new Chart(_rdEl,{type:'bar',
+      data:{labels:_rucDistData.labels,datasets:[{
+        label:'RUC',data:_rucDistData.counts,
+        backgroundColor:_rucDistData.colors.map(function(c){return c+'CC';}),
+        borderColor:_rucDistData.colors,borderWidth:1,borderRadius:4
+      }]},
+      options:{responsive:true,maintainAspectRatio:false,
+        plugins:{legend:{display:false},
+          tooltip:{callbacks:{label:function(c){return c.raw+' RUC';}}},
+          datalabels:{display:false}},
+        scales:{x:{grid:{display:false},ticks:{color:'var(--t2)',font:{size:9}}},
+          y:{grid:{color:'rgba(0,0,0,.06)'},ticks:{stepSize:1,color:'#718096',font:{size:9}}}}}
+    });
+    if(document.getElementById('p8donutsub'))
+      document.getElementById('p8donutsub').textContent='58 RUC · 13 hunters · Dia 30 Jun';
+  }
+
+  // ── rucNokCards ──────────────────────────────────────────────────────────
+  var _nokEl=document.getElementById('rucNokCards');
+  var _nokSub=document.getElementById('rucNokSub');
+  if(_nokEl && typeof _lt25Data!=='undefined'){
+    var _nfilt=_lt25Data.filter(function(r){return inTeam(r.h);});
+    if(_rhf&&_rhf.value)_nfilt=_nfilt.filter(function(r){return r.h===_rhf.value;});
+    if(_nokSub)_nokSub.textContent=_nfilt.length+' cuentas · Proyección: S/.'+
+      _nfilt.reduce(function(s,r){return s+r.proy;},0).toLocaleString('es-PE',{minimumFractionDigits:0,maximumFractionDigits:0});
+    _nokEl.innerHTML=_nfilt.map(function(r){
+      return '<div style="padding:8px 10px;background:var(--bg1);border-radius:8px;border:1px solid rgba(0,0,0,.08)">'
+        +'<div style="font-size:10px;font-weight:700;color:'+r.col+';margin-bottom:2px">'+r.h+'</div>'
+        +'<div style="font-size:10px;color:var(--t2);margin-bottom:4px">'+r.r+'</div>'
+        +'<div style="display:flex;gap:8px;font-size:9px">'
+        +'<span style="color:#718096">RUC: '+r.ruc+'</span>'
+        +(r.proy>0?'<span style="color:#A855F7;font-family:var(--m)">Proy: S/.'+r.proy.toLocaleString('es-PE',{minimumFractionDigits:2,maximumFractionDigits:2})+'</span>':'')
+        +'</div></div>';
+    }).join('');
+  }
   var _rfilt=_rucData.filter(function(r){return inTeam(r.h);});
   if(_rhf&&_rhf.value)_rfilt=_rfilt.filter(function(r){return r.h===_rhf.value;});
+  // Group by hunter
+  var _grp={};
+  _rfilt.forEach(function(r){if(!_grp[r.h])_grp[r.h]={col:r.col,rows:[]};_grp[r.h].rows.push(r);});
+  var _fmt2=function(v){return v>0?'S/.'+v.toLocaleString('es-PE',{minimumFractionDigits:2,maximumFractionDigits:2}):'-';};
+  var _si='<span style="background:rgba(0,229,160,.12);color:#00E5A0;font-size:9px;font-weight:700;padding:1px 6px;border-radius:10px">SI</span>';
+  var _no='<span style="background:rgba(0,0,0,.06);color:#9AA5B4;font-size:9px;font-weight:700;padding:1px 6px;border-radius:10px">NO</span>';
   if(_el('rucTabla'))_el('rucTabla').innerHTML=
     '<table style="width:100%;border-collapse:collapse;font-size:11px">'
-    +'<thead><tr>'
-    +'<th style="font-size:9px;text-transform:uppercase;color:var(--t3);padding:8px;text-align:left;position:sticky;top:0;background:#f8f9fa;z-index:2;border-bottom:2px solid rgba(0,0,0,.12)">Hunter</th>'
-    +'<th style="font-size:9px;text-transform:uppercase;color:var(--t3);padding:8px;text-align:left;position:sticky;top:0;background:#f8f9fa;z-index:2;border-bottom:2px solid rgba(0,0,0,.12)">Razon Social</th>'
-    +'<th style="font-size:9px;text-transform:uppercase;color:var(--t3);padding:8px;text-align:left;position:sticky;top:0;background:#f8f9fa;z-index:2;border-bottom:2px solid rgba(0,0,0,.12)">RUC</th>'
-    +'<th style="font-size:9px;text-transform:uppercase;color:var(--t3);padding:8px;text-align:center;position:sticky;top:0;background:#f8f9fa;z-index:2;border-bottom:2px solid rgba(0,0,0,.12)">&gt;25K M1</th>'
-    +'<th style="font-size:9px;text-transform:uppercase;color:var(--t3);padding:8px;text-align:center;position:sticky;top:0;background:#f8f9fa;z-index:2;border-bottom:2px solid rgba(0,0,0,.12)">&gt;25K M0</th>'
-    +'<th style="font-size:9px;text-transform:uppercase;color:var(--t3);padding:8px;text-align:right;position:sticky;top:0;background:#f8f9fa;z-index:2;border-bottom:2px solid rgba(0,0,0,.12)">Potencial</th>'
-    +'<th style="font-size:9px;text-transform:uppercase;color:var(--t3);padding:8px;text-align:right;position:sticky;top:0;background:#f8f9fa;z-index:2;border-bottom:2px solid rgba(0,0,0,.12)">Proyeccion</th>'
+    +'<thead><tr style="background:rgba(0,0,0,.04)">'
+    +'<th style="font-size:9px;text-transform:uppercase;color:var(--t3);padding:7px 8px;text-align:left;position:sticky;top:0;background:#f8f9fa;z-index:2;border-bottom:2px solid rgba(0,0,0,.12)">Hunter / Razón Social</th>'
+    +'<th style="font-size:9px;text-transform:uppercase;color:var(--t3);padding:7px 8px;text-align:left;position:sticky;top:0;background:#f8f9fa;z-index:2;border-bottom:2px solid rgba(0,0,0,.12)">RUC</th>'
+    +'<th style="font-size:9px;text-transform:uppercase;color:var(--t3);padding:7px 8px;text-align:center;position:sticky;top:0;background:#f8f9fa;z-index:2;border-bottom:2px solid rgba(0,0,0,.12)">&gt;25K M1</th>'
+    +'<th style="font-size:9px;text-transform:uppercase;color:var(--t3);padding:7px 8px;text-align:center;position:sticky;top:0;background:#f8f9fa;z-index:2;border-bottom:2px solid rgba(0,0,0,.12)">&gt;25K M0</th>'
+    +'<th style="font-size:9px;text-transform:uppercase;color:var(--t3);padding:7px 8px;text-align:right;position:sticky;top:0;background:#f8f9fa;z-index:2;border-bottom:2px solid rgba(0,0,0,.12)">Potencial</th>'
+    +'<th style="font-size:9px;text-transform:uppercase;color:var(--t3);padding:7px 8px;text-align:right;position:sticky;top:0;background:#f8f9fa;z-index:2;border-bottom:2px solid rgba(0,0,0,.12)">Jun-30</th>'
+    +'<th style="font-size:9px;text-transform:uppercase;color:var(--t3);padding:7px 8px;text-align:right;position:sticky;top:0;background:#f8f9fa;z-index:2;border-bottom:2px solid rgba(0,0,0,.12)">Proyección</th>'
     +'</tr></thead><tbody>'
-    +_rfilt.map(function(r){
-      var b1=r.m1==='SI'?'<span style="background:rgba(0,229,160,.12);color:#00E5A0;font-size:9px;font-weight:700;padding:1px 6px;border-radius:10px">SI</span>':'<span style="background:rgba(0,0,0,.06);color:#9AA5B4;font-size:9px;font-weight:700;padding:1px 6px;border-radius:10px">NO</span>';
-      var b0=r.m0==='SI'?'<span style="background:rgba(0,229,160,.12);color:#00E5A0;font-size:9px;font-weight:700;padding:1px 6px;border-radius:10px">SI</span>':'<span style="background:rgba(0,0,0,.06);color:#9AA5B4;font-size:9px;font-weight:700;padding:1px 6px;border-radius:10px">NO</span>';
-      return '<tr>'
-        +'<td style="padding:8px;border-top:1px solid rgba(0,0,0,.06)"><span style="font-weight:600;color:'+r.col+'">'+r.h+'</span></td>'
-        +'<td style="padding:8px;border-top:1px solid rgba(0,0,0,.06)">'+r.r+'</td>'
-        +'<td style="padding:8px;border-top:1px solid rgba(0,0,0,.06);font-size:10px;color:#718096">'+r.ruc+'</td>'
-        +'<td style="padding:8px;border-top:1px solid rgba(0,0,0,.06);text-align:center">'+b1+'</td>'
-        +'<td style="padding:8px;border-top:1px solid rgba(0,0,0,.06);text-align:center">'+b0+'</td>'
-        +'<td style="padding:8px;border-top:1px solid rgba(0,0,0,.06);text-align:right;font-family:var(--m)">S/.'+r.pot.toLocaleString()+'</td>'
-        +'<td style="padding:8px;border-top:1px solid rgba(0,0,0,.06);text-align:right;font-family:var(--m);color:#A855F7">S/.'+r.proy.toLocaleString()+'</td>'
-        +'</tr>';
-    }).join('')+'</tbody></table>';
-}
-  // Usar RUC_META que tiene datos del dia 30 Junio
-  var _src=typeof RUC_META!=='undefined'?RUC_META:[];
-  var _ruc=_src.filter(function(r){return r.ruc>0 && inTeam(r.n);});
-  var _rhf=document.getElementById("rucHFilt");
-  if(_rhf&&_rhf.value)_ruc=_ruc.filter(function(r){return r.n===_rhf.value;});
-  var _total=_ruc.length;
-  var _el=function(id){return document.getElementById(id);};
-
-  // KPI chips
-  if(_el('k8total'))_el('k8total').textContent=_total;
-  if(_el('k8ok'))_el('k8ok').textContent=_total;
-  if(_el('k8okpct'))_el('k8okpct').textContent=Math.round(_total/44*100)+'%';
-  if(_el('k8nok'))_el('k8nok').textContent=0;
-  if(_el('k8proy'))_el('k8proy').textContent='7%';
-  if(_el('k8real'))_el('k8real').textContent='Real: '+_total+' RUC · Dia 30 Jun';
-
-  // Progress by hunter
-  var _byHArr=_ruc.map(function(r){return {n:r.n,col:r.col,cnt:r.ruc};});
-  if(_el('rucMeta')) _el('rucMeta').innerHTML=_byHArr.map(function(r){
-    var pct=Math.min(100,Math.round(r.cnt/3*100));
-    var col=pct>=100?'#00E5A0':pct>=66?'#F59E0B':'#EF4444';
-    return '<div style="margin-bottom:7px">'
-      +'<div style="display:flex;justify-content:space-between;margin-bottom:2px">'
-      +'<div style="display:flex;align-items:center;gap:6px">'
-      +'<div style="width:8px;height:8px;border-radius:50%;background:'+r.col+'"></div>'
-      +'<span style="font-size:10px;color:var(--t1)">'+r.n+'</span></div>'
-      +'<span style="font-size:10px;font-family:var(--m);color:'+col+'">'+r.cnt+' RUC</span></div>'
-      +'<div style="height:5px;background:rgba(0,0,0,.07);border-radius:3px;overflow:hidden">'
-      +'<div style="width:'+pct+'%;height:100%;background:'+col+';border-radius:3px"></div></div>'
-      +'<div style="font-size:9px;color:var(--t3)">'+(pct>=100?'Meta cumplida ✅':'Faltan '+(3-Math.min(3,r.cnt)))+'</div></div>';
-  }).join('');
-
-  // Tabla RUC — datos del Excel del 14 Junio
-  var _rucData=[
-    {h:'CRISTIAN HUAMAN',col:'#00C9FF',r:'Finisher Cafe S.A.C.',banco:'IBK',ruc:'20612548251',m1:'SI',m0:'SI',pot:30000,proy:4689},
-    {h:'ANALIZ CASTILLO',col:'#F59E0B',r:'OBANDO TORRES REMY GEZEER',banco:'IBK',ruc:'10723794574',m1:'NO',m0:'NO',pot:30000,proy:0},
-    {h:'ALICIA QUINONES',col:'#FF8C42',r:'Creatividad En Alimentos S.A.C',banco:'IBK',ruc:'20610417486',m1:'SI',m0:'SI',pot:30000,proy:34},
-    {h:'OLIVER LOPEZ',col:'#4ECDC4',r:'Sofinett S.A.C.',banco:'IBK',ruc:'20608566423',m1:'NO',m0:'NO',pot:30000,proy:0},
-    {h:'ROCK LLANOS',col:'#84CC16',r:'MUNICIPALIDAD DISTRITAL DE SANTA MARIA',banco:'IBK',ruc:'20172318551',m1:'NO',m0:'NO',pot:30000,proy:0}
-  ];
-  var _rfilt=_rucData.filter(function(r){return inTeam(r.h);});
-  if(_rhf&&_rhf.value)_rfilt=_rfilt.filter(function(r){return r.h===_rhf.value;});
-
-  if(_el('rucTabla')) _el('rucTabla').innerHTML=
-    '<table style="width:100%;border-collapse:collapse;font-size:11px">'
-    +'<thead><tr>'
-    +'<th style="font-size:9px;text-transform:uppercase;color:var(--t3);padding:8px;text-align:left;position:sticky;top:0;background:#f8f9fa;z-index:2;border-bottom:2px solid rgba(0,0,0,.12)">Hunter</th>'
-    +'<th style="font-size:9px;text-transform:uppercase;color:var(--t3);padding:8px;text-align:left;position:sticky;top:0;background:#f8f9fa;z-index:2;border-bottom:2px solid rgba(0,0,0,.12)">Razon Social</th>'
-    +'<th style="font-size:9px;text-transform:uppercase;color:var(--t3);padding:8px;text-align:left;position:sticky;top:0;background:#f8f9fa;z-index:2;border-bottom:2px solid rgba(0,0,0,.12)">RUC</th>'
-    +'<th style="font-size:9px;text-transform:uppercase;color:var(--t3);padding:8px;text-align:center;position:sticky;top:0;background:#f8f9fa;z-index:2;border-bottom:2px solid rgba(0,0,0,.12)">>25K M1</th>'
-    +'<th style="font-size:9px;text-transform:uppercase;color:var(--t3);padding:8px;text-align:center;position:sticky;top:0;background:#f8f9fa;z-index:2;border-bottom:2px solid rgba(0,0,0,.12)">>25K M0</th>'
-    +'<th style="font-size:9px;text-transform:uppercase;color:var(--t3);padding:8px;text-align:right;position:sticky;top:0;background:#f8f9fa;z-index:2;border-bottom:2px solid rgba(0,0,0,.12)">Potencial</th>'
-    +'<th style="font-size:9px;text-transform:uppercase;color:var(--t3);padding:8px;text-align:right;position:sticky;top:0;background:#f8f9fa;z-index:2;border-bottom:2px solid rgba(0,0,0,.12)">Proyeccion</th>'
-    +'</tr></thead><tbody>'
-    +_rfilt.map(function(r){
-      var _b1=r.m1==='SI'?'<span style="background:rgba(0,229,160,.12);color:#00E5A0;font-size:9px;font-weight:700;padding:1px 6px;border-radius:10px">SI</span>':'<span style="background:rgba(0,0,0,.06);color:#9AA5B4;font-size:9px;font-weight:700;padding:1px 6px;border-radius:10px">NO</span>';
-      var _b0=r.m0==='SI'?'<span style="background:rgba(0,229,160,.12);color:#00E5A0;font-size:9px;font-weight:700;padding:1px 6px;border-radius:10px">SI</span>':'<span style="background:rgba(0,0,0,.06);color:#9AA5B4;font-size:9px;font-weight:700;padding:1px 6px;border-radius:10px">NO</span>';
-      return '<tr>'
-        +'<td style="padding:8px;border-top:1px solid rgba(0,0,0,.06)"><span style="font-weight:600;color:'+r.col+'">'+r.h+'</span></td>'
-        +'<td style="padding:8px;border-top:1px solid rgba(0,0,0,.06);max-width:200px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">'+r.r+'</td>'
-        +'<td style="padding:8px;border-top:1px solid rgba(0,0,0,.06);font-size:10px;color:#718096">'+r.ruc+'</td>'
-        +'<td style="padding:8px;border-top:1px solid rgba(0,0,0,.06);text-align:center">'+_b1+'</td>'
-        +'<td style="padding:8px;border-top:1px solid rgba(0,0,0,.06);text-align:center">'+_b0+'</td>'
-        +'<td style="padding:8px;border-top:1px solid rgba(0,0,0,.06);text-align:right;font-family:var(--m)">S/.'+r.pot.toLocaleString()+'</td>'
-        +'<td style="padding:8px;border-top:1px solid rgba(0,0,0,.06);text-align:right;font-family:var(--m);color:#A855F7">S/.'+r.proy.toLocaleString()+'</td>'
-        +'</tr>';
+    +Object.keys(_grp).map(function(h){
+      var g=_grp[h];
+      var header='<tr style="background:rgba(0,0,0,.04)"><td colspan="7" style="padding:7px 8px;font-weight:700;font-size:11px;color:'+g.col+'">● '+h+' ('+g.rows.length+' RUC)</td></tr>';
+      var rows=g.rows.map(function(r,i){
+        var bg=i%2===0?'':'background:rgba(0,0,0,.01)';
+        return '<tr style="'+bg+'">'
+          +'<td style="padding:5px 8px 5px 20px;border-top:1px solid rgba(0,0,0,.04);color:var(--t2);font-size:10px">'+r.r+'</td>'
+          +'<td style="padding:5px 8px;border-top:1px solid rgba(0,0,0,.04);font-size:10px;color:#718096">'+r.ruc+'</td>'
+          +'<td style="padding:5px 8px;border-top:1px solid rgba(0,0,0,.04);text-align:center">'+(r.m1==='SI'?_si:_no)+'</td>'
+          +'<td style="padding:5px 8px;border-top:1px solid rgba(0,0,0,.04);text-align:center">'+(r.m0==='SI'?_si:_no)+'</td>'
+          +'<td style="padding:5px 8px;border-top:1px solid rgba(0,0,0,.04);text-align:right;font-family:var(--m)">S/.'+r.pot.toLocaleString()+'</td>'
+          +'<td style="padding:5px 8px;border-top:1px solid rgba(0,0,0,.04);text-align:right;font-family:var(--m);color:#00E5A0">'+_fmt2(r.jun)+'</td>'
+          +'<td style="padding:5px 8px;border-top:1px solid rgba(0,0,0,.04);text-align:right;font-family:var(--m);color:#A855F7">'+_fmt2(r.proy)+'</td>'
+          +'</tr>';
+      }).join('');
+      return header+rows;
     }).join('')
     +'</tbody></table>';
+}
 const COSECHAS_DATA=[
 {"h":"ANDREA SOTO","col":"#FFD93D","team":"carlos","mes":"MARZO","r":"DASSO DRY CLEANER E.I.R.L","t":"FISICO","pot":75000.0,"mar":10977.7,"abr":139261.08,"may":145562.9,"jun":124968.9,"inc":0.858522},
 {"h":"ANA CARRERA","col":"#A855F7","team":"ana","mes":"MARZO","r":"AUTOMECANICA SAN MIGUEL SRL","t":"FISICO","pot":30000.0,"mar":32.63,"abr":0.0,"may":0.0,"jun":0.0,"inc":0.0},
