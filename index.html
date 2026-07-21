@@ -206,7 +206,7 @@ canvas{display:block}
 
       <!-- Cosechas -->
       <div class="panel" style="margin-bottom:14px">
-        <div class="ph"><div><div class="pt">Distribución de Cosechas</div><div class="ps">Proyeccion · Por mes · Dia 19 Julio</div></div></div>
+        <div class="ph"><div><div class="pt">Distribución de Cosechas</div><div class="ps">Real vs Proyección · Abril a Julio · Dia 19 Julio</div></div></div>
         <div style="position:relative;height:240px"><canvas id="cCosecha"></canvas></div>
       </div>
 
@@ -242,19 +242,19 @@ canvas{display:block}
 
       <!-- Cumplimiento Captura -->
       <div class="panel" style="margin-bottom:14px">
-        <div class="ph"><div><div class="pt">Cumplimiento Captura — Dia 19 Julio</div><div class="ps">Real vs Cuota · Senior S/.280K · Junior S/.250K · 14 hunters</div></div></div>
+        <div class="ph"><div><div class="pt">Cumplimiento Captura — Dia 19 Julio</div><div class="ps">Real (sin resta) vs Cuota · Senior S/.280K · Junior S/.250K · 17 hunters</div></div></div>
         <div style="position:relative;height:300px"><canvas id="cCumpl"></canvas></div>
       </div>
 
       <!-- RUC 3 circles -->
       <div class="g3" style="margin-bottom:14px">
         <div class="panel">
-          <div class="ph"><div><div class="pt">RUC — Julio vs Junio</div><div class="ps">13 RUC totales · Dia 19 Julio</div></div></div>
+          <div class="ph"><div><div class="pt">RUC — Julio vs Junio</div><div class="ps">47 RUC totales · Dia 19 Julio · Julio: 47 · Junio: 0</div></div></div>
           <div style="position:relative;height:190px"><canvas id="cRucMeses"></canvas></div>
           <div id="cRucMesesLgd" style="display:flex;justify-content:center;gap:12px;margin-top:6px;font-size:10px"></div>
         </div>
         <div class="panel">
-          <div class="ph"><div><div class="pt">RUC >&lt; o = A 25k</div><div class="ps">≥25K: 1 · &lt;25K: 12 · Funnel: 77 · Total: 13</div></div></div>
+          <div class="ph"><div><div class="pt">RUC >&lt; o = A 25k</div><div class="ps">≥25K: 8 · &lt;25K: 39 · Funnel: 77 · Total: 47</div></div></div>
           <div style="display:flex;align-items:center;gap:14px">
             <div style="position:relative;height:190px;flex:1"><canvas id="cRucPot"></canvas></div>
             <div style="min-width:110px;padding:10px 14px;background:rgba(0,0,0,.03);border-radius:10px;border:1px solid rgba(0,0,0,.08)">
@@ -276,7 +276,7 @@ canvas{display:block}
           <div id="cRucPotLgd" style="display:flex;justify-content:center;gap:12px;margin-top:6px;font-size:10px"></div>
         </div>
         <div class="panel">
-          <div class="ph"><div><div class="pt">RUC — Contribución por Equipo</div><div class="ps">Head Ana vs Head Carlos</div></div></div>
+          <div class="ph"><div><div class="pt">RUC — Contribución por Equipo</div><div class="ps">Carlos 25 · Ana 22 · Total 47 · Dia 19 Julio</div></div></div>
           <div style="position:relative;height:190px"><canvas id="cRucTeam"></canvas></div>
         </div>
       </div>
@@ -1557,18 +1557,18 @@ function bP1(){
   var _fmk=function(v){var a=Math.abs(v);var s=v<0?'-':'';if(a>=1e6)return s+'S/.'+(a/1e6).toFixed(2)+'M';if(a>=1000)return s+'S/.'+(a/1000).toFixed(0)+'K';return s+'S/.'+a.toFixed(0);};
 
   // ── Datos por hunter (orden fijo: Carlos primero, Ana segundo) ─────────────
-  var _ALL_TEAMS=['carlos','carlos','carlos','carlos','carlos','carlos','carlos','carlos','ana','ana','ana','ana','ana','ana','ana','ana'];
-  var _ALL_N=["MELISSA VASQUEZ","MELISA LLACCHUAS","ROSA TORRES","ANDREA SOTO","YASMIN CHECA","MARIA FLORES","KEVIN PAULINO","LEONARDO TORRES","ALICIA QUINONES","OLIVER LOPEZ","PATRICIA ASTORGA","ANALIZ CASTILLO","ROCK LLANOS","FRANCO ROUILLON","CRISTIAN HUAMAN","JANNIOR SALAZAR"];
-  var _ALL_T=["Head Carlos","Head Carlos","Head Carlos","Head Carlos","Head Carlos","Head Carlos","Head Carlos","Head Carlos","Head Ana","Head Ana","Head Ana","Head Ana","Head Ana","Head Ana","Head Ana","Head Ana"];
-  var _ALL_LBL=["Melissa V.","Melisa Ll.","Rosa T.","Andrea S.","Yasmin Ch.","Maria Fl.","Kevin P.","Leonardo T.","Alicia Q.","Oliver L.","Patricia A.","Analiz C.","Rock Ll.","Franco R.","Cristian H.","Jannior S."];
-  var _ALL_BC=["#FF6B6B","#FF6B9D","#6BCF7F","#FFD93D","#888780","#EC4899","#06B6D4","#8B5CF6","#FF8C42","#4ECDC4","#00E5A0","#F59E0B","#84CC16","#F97316","#00C9FF","#E11D48"];
-  var _ALL_CAP=[182993,-387902,-402732,-489811,-255127,38860,52126,147818,-602938,35501,-331397,-376830,-77585,-35644,-2543,20657];
-  var _ALL_CUOTA_CAP=[280000,280000,280000,280000,250000,250000,250000,250000,280000,280000,280000,280000,250000,250000,250000,250000];
-  var _ALL_QR=[1,4,0,4,0,1,1,0,2,1,1,1,2,3,1,0];
-  var _ALL_RUC=[0,0,0,0,0,1,0,1,1,0,0,0,1,0,1,1];
-  var _ALL_RUC_MAY=[0,0,0,0,0,1,0,1,1,0,0,0,1,0,1,1];
-  var _ALL_ARIS=[0,0,287,0,59,59,0,0,0,59,59,0,59,0,0,0];
-  var _ALL_ARIS_CUOTA=[240,240,240,240,180,180,180,240,240,240,240,180,180,180,180];
+  var _ALL_TEAMS=['carlos','carlos','carlos','carlos','carlos','carlos','carlos','carlos','ana','ana','ana','ana','ana','ana','ana','ana','carlos'];
+  var _ALL_N=["MELISSA VASQUEZ","MELISA LLACCHUAS","ROSA TORRES","ANDREA SOTO","YASMIN CHECA","MARIA FLORES","KEVIN PAULINO","LEONARDO TORRES","ALICIA QUINONES","OLIVER LOPEZ","PATRICIA ASTORGA","ANALIZ CASTILLO","ROCK LLANOS","FRANCO ROUILLON","CRISTIAN HUAMAN","JANNIOR SALAZAR","GIULIANA HERENA"];
+  var _ALL_T=["Head Carlos","Head Carlos","Head Carlos","Head Carlos","Head Carlos","Head Carlos","Head Carlos","Head Carlos","Head Ana","Head Ana","Head Ana","Head Ana","Head Ana","Head Ana","Head Ana","Head Ana","Head Carlos"];
+  var _ALL_LBL=["Melissa V.","Melisa Ll.","Rosa T.","Andrea S.","Yasmin Ch.","Maria Fl.","Kevin P.","Leonardo T.","Alicia Q.","Oliver L.","Patricia A.","Analiz C.","Rock Ll.","Franco R.","Cristian H.","Jannior S.","Giuliana H."];
+  var _ALL_BC=["#FF6B6B","#FF6B9D","#6BCF7F","#FFD93D","#888780","#EC4899","#06B6D4","#8B5CF6","#FF8C42","#4ECDC4","#00E5A0","#F59E0B","#84CC16","#F97316","#00C9FF","#E11D48","#3B82F6"];
+  var _ALL_CAP=[58528.87,225356.39,58528.87,51956.87,81255.47,274233.69,235096.44,302119.59,310372.63,342060.74,504437.13,160582.05,89737.66,56041.68,243816.04,234276.29,2784.10];
+  var _ALL_CUOTA_CAP=[280000,280000,280000,280000,250000,250000,250000,250000,280000,280000,280000,280000,250000,250000,250000,250000,250000];
+  var _ALL_QR=[1,4,0,4,0,1,1,0,2,1,1,1,2,3,1,0,0];
+  var _ALL_RUC=[0,0,0,0,0,1,0,1,1,0,0,0,1,0,1,1,0];
+  var _ALL_RUC_MAY=[0,0,0,0,0,1,0,1,1,0,0,0,1,0,1,1,0];
+  var _ALL_ARIS=[0,0,287,0,59,59,0,0,0,59,59,0,59,0,0,0,0];
+  var _ALL_ARIS_CUOTA=[240,240,240,240,180,180,180,180,240,240,240,240,180,180,180,180,180];
 
   // Filtrar por equipo
   var _idx=_ALL_TEAMS.map(function(t,i){return(_t==='all'||t===_t)?i:-1;}).filter(function(i){return i>=0;});
@@ -1587,10 +1587,10 @@ function bP1(){
   var _ruc_may_tot=_sum(_ruc_may_h);
   var _ruc_abr_tot=_ruc_tot-_ruc_may_tot;
   // Ana Carrera no está en array de 14 — corregir totales globales
-  if(_t==='all'){_ruc_tot=13;_ruc_may_tot=13;_ruc_abr_tot=0;}
+  if(_t==='all'){_ruc_tot=47;_ruc_may_tot=47;_ruc_abr_tot=0;}
   if(_t==='all')_qr_tot=3;
-  if(_t==='carlos'){_ruc_tot=0;_ruc_may_tot=0;_ruc_abr_tot=0;}
-  if(_t==='ana'){_ruc_tot=13;_ruc_may_tot=13;_ruc_abr_tot=0;}
+  if(_t==='carlos'){_ruc_tot=25;_ruc_may_tot=25;_ruc_abr_tot=0;}
+  if(_t==='ana'){_ruc_tot=22;_ruc_may_tot=22;_ruc_abr_tot=0;}
   var _aris_tot=_sum(_aris_h);
   var _aris_lic_tot=(_t==='all'?3:(_t==='carlos'?3:0));
 
@@ -1617,10 +1617,10 @@ function bP1(){
   // RUC stats — Junio:0 Julio:13 (Carlos:10 Ana:3)
   var _ruc_carlos_may=0;
   var _ruc_ana_may=0;
-  var _ruc_carlos_abr=(_t==='all'?10:(_t==='carlos'?10:0));
-  var _ruc_ana_abr=(_t==='all'?3:(_t==='ana'?3:0));
-  var _ruc_ge25=(_t==='all'?1:(_t==='carlos'?0:1));
-  var _ruc_lt25=(_t==='all'?12:(_t==='carlos'?0:12));
+  var _ruc_carlos_abr=(_t==='all'?25:(_t==='carlos'?25:0));
+  var _ruc_ana_abr=(_t==='all'?22:(_t==='ana'?22:0));
+  var _ruc_ge25=(_t==='all'?8:(_t==='carlos'?5:3));
+  var _ruc_lt25=(_t==='all'?39:(_t==='carlos'?20:19));
   var _ruc_fun=77;
 
   // Arisale stats
@@ -1703,20 +1703,20 @@ function bP1(){
   dc('cCosecha');
   (function(){
     var el=document.getElementById('cCosecha');if(!el)return;
-    // Junio Dia 19: Real y Proyeccion por mes
-    // Marzo:  Real -416,102  | Proy -780,190  | -54.30%
-    // Abril:  Real -274,245  | Proy -514,210  | -35.79%
-    // Mayo:   Real 1,349,502 | Proy 2,530,315 | 176.10%
-    // Junio:  Real 107,168   | Proy 200,939   |  13.98%
-    var _cos_real=[-922036,-2008922,7731,128827];
-    var _cos_proy=[605502,499871,1568427,307203];
-    var _pct=[20.31,16.77,52.61,10.31];
+    // Dia 19 Julio: Real y Proyeccion por mes de cosecha
+    // Abril: Real -371,350.92   | Proy 648,430.06   | -57.3%
+    // Mayo:  Real -1,137,815.57 | Proy 477,976.00   | -238.1%
+    // Junio: Real 510,986.87    | Proy 1,788,716.72 | 28.6%
+    // Julio: Real 531,900.24    | Proy 1,104,404.41 | 48.2%
+    var _cos_real=[-371350.92,-1137815.57,510986.87,531900.24];
+    var _cos_proy=[648430.06,477976.00,1788716.72,1104404.41];
+    var _pct=[-57.3,-238.1,28.6,48.2];
     var _nc_all=[40,43,59,11];
-    var _lbl_cos=["Marzo","Abril","Mayo","Junio"];
+    var _lbl_cos=["Abril","Mayo","Junio","Julio"];
     // Colors: negative = red tones, positive = green/blue tones
-    var _bg_real=["rgba(239,68,68,.75)","rgba(239,68,68,.75)","rgba(168,85,247,.75)","rgba(34,197,94,.75)"];
-    var _bg_proy=["rgba(239,68,68,.25)","rgba(239,68,68,.25)","rgba(168,85,247,.25)","rgba(34,197,94,.25)"];
-    var _bc=["#EF4444","#EF4444","#A855F7","#22C55E"];
+    var _bg_real=["rgba(239,68,68,.75)","rgba(239,68,68,.75)","rgba(34,197,94,.75)","rgba(168,85,247,.75)"];
+    var _bg_proy=["rgba(239,68,68,.25)","rgba(239,68,68,.25)","rgba(34,197,94,.25)","rgba(168,85,247,.25)"];
+    var _bc=["#EF4444","#EF4444","#22C55E","#A855F7"];
     var _plug={id:'cosL30Jun',afterDatasetsDraw:function(chart){
       var ctx=chart.ctx;
       chart.data.datasets.forEach(function(ds,di){
@@ -1817,9 +1817,9 @@ function bP1(){
   (function(){
     var el=document.getElementById('cRucMeses');if(!el)return;
     var _prM={id:'rM31',afterDatasetsDraw:function(chart){var ctx=chart.ctx,ds=chart.data.datasets[0],tot=ds.data.reduce(function(a,b){return a+b;},0);chart.getDatasetMeta(0).data.forEach(function(arc,i){var v=ds.data[i];if(!v)return;var mid=(arc.startAngle+arc.endAngle)/2,r2=(arc.outerRadius+arc.innerRadius)/2,x=arc.x+Math.cos(mid)*r2,y=arc.y+Math.sin(mid)*r2;ctx.save();ctx.fillStyle='#fff';ctx.font='bold 11px sans-serif';ctx.textAlign='center';ctx.textBaseline='middle';ctx.fillText(v,x,y-6);ctx.fillText('('+Math.round(v/tot*100)+'%)',x,y+7);ctx.restore();});}};
-    CHS['cRucMeses']=new Chart(el,{type:'doughnut',plugins:[_prM],data:{labels:['Junio 2026','Mayo 2026'],datasets:[{data:[_ruc_abr_tot,_ruc_may_tot],backgroundColor:['rgba(0,201,255,.80)','rgba(0,229,160,.80)'],borderColor:['#00C9FF','#00E5A0'],borderWidth:2,hoverOffset:8}]},options:{responsive:true,maintainAspectRatio:false,cutout:'58%',plugins:{legend:{display:false},tooltip:{callbacks:{label:function(ctx){return ctx.label+': '+ctx.raw+' RUC';}}}}}});
+    CHS['cRucMeses']=new Chart(el,{type:'doughnut',plugins:[_prM],data:{labels:['Junio 2026','Julio 2026'],datasets:[{data:[_ruc_abr_tot,_ruc_may_tot],backgroundColor:['rgba(0,201,255,.80)','rgba(0,229,160,.80)'],borderColor:['#00C9FF','#00E5A0'],borderWidth:2,hoverOffset:8}]},options:{responsive:true,maintainAspectRatio:false,cutout:'58%',plugins:{legend:{display:false},tooltip:{callbacks:{label:function(ctx){return ctx.label+': '+ctx.raw+' RUC';}}}}}});
     var l=document.getElementById('cRucMesesLgd'),sp='display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:4px;background:';
-    if(l)l.innerHTML='<span><span style="'+sp+'#00C9FF"></span>Junio: '+_ruc_may_tot+' RUC</span>'+'<span style="margin-left:8px"><span style="'+sp+'#00E5A0"></span>Mayo: '+_ruc_abr_tot+' RUC</span>';
+    if(l)l.innerHTML='<span><span style="'+sp+'#00E5A0"></span>Julio: '+_ruc_may_tot+' RUC</span>'+'<span style="margin-left:8px"><span style="'+sp+'#00C9FF"></span>Junio: '+_ruc_abr_tot+' RUC</span>';
   })();
 
   dc('cRucPot');
