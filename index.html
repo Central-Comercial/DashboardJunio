@@ -254,7 +254,7 @@ canvas{display:block}
           <div id="cRucMesesLgd" style="display:flex;justify-content:center;gap:12px;margin-top:6px;font-size:10px"></div>
         </div>
         <div class="panel">
-          <div class="ph"><div><div class="pt">RUC >&lt; o = A 25k</div><div class="ps">≥25K: 8 · &lt;25K: 39 · Funnel: 77 · Total: 47</div></div></div>
+          <div class="ph"><div><div class="pt">RUC >&lt; o = A 25k</div><div class="ps">≥25K: 12 · &lt;25K: 35 · Funnel: 77 · Total: 47</div></div></div>
           <div style="display:flex;align-items:center;gap:14px">
             <div style="position:relative;height:190px;flex:1"><canvas id="cRucPot"></canvas></div>
             <div style="min-width:110px;padding:10px 14px;background:rgba(0,0,0,.03);border-radius:10px;border:1px solid rgba(0,0,0,.08)">
@@ -290,17 +290,17 @@ canvas{display:block}
       <!-- QR 3 circles -->
       <div class="g3" style="margin-bottom:14px">
         <div class="panel">
-          <div class="ph"><div><div class="pt">QR — Estado</div><div class="ps">Activos vs Pendientes · Total 20</div></div></div>
+          <div class="ph"><div><div class="pt">QR — Estado</div><div class="ps">≥500 Activos: 16 · <500 Pendientes: 18 · Total 34</div></div></div>
           <div style="position:relative;height:190px"><canvas id="cQrEstado"></canvas></div>
           <div id="cQrEstadoLgd" style="display:flex;justify-content:center;gap:12px;margin-top:6px;font-size:10px"></div>
         </div>
         <div class="panel">
-          <div class="ph"><div><div class="pt">QR Contribución por Equipo</div><div class="ps">Jun 9 act · 12 pend · Cuota 42</div></div></div>
+          <div class="ph"><div><div class="pt">QR Contribución por Equipo</div><div class="ps">Carlos 14 · Ana 20 · Total 34 · Cuota 54</div></div></div>
           <div style="position:relative;height:190px"><canvas id="cQrActivos"></canvas></div>
           <div id="cQrActivosLgd" style="display:flex;justify-content:center;gap:12px;margin-top:6px;font-size:10px"></div>
         </div>
         <div class="panel">
-          <div class="ph"><div><div class="pt">QR Facturación — Julio 2026</div><div class="ps">Junio 9 activos · 12 pendientes</div></div></div>
+          <div class="ph"><div><div class="pt">QR Facturación — Julio 2026</div><div class="ps">Julio: 34 QR = S/.171,412.43 · Junio: 0 QR = S/.0</div></div></div>
           <div style="position:relative;height:190px"><canvas id="cQrFact"></canvas></div>
           <div id="cQrFactLgd" style="display:flex;justify-content:center;gap:12px;margin-top:6px;font-size:10px"></div>
         </div>
@@ -320,12 +320,12 @@ canvas{display:block}
           <div id="cArisEstadoLgd" style="display:flex;justify-content:center;gap:14px;margin-top:8px;font-size:10px"></div>
         </div>
         <div class="panel">
-          <div class="ph"><div><div class="pt">Arisale Con Alta — 42 lic</div><div class="ps">Head Carlos vs Head Ana · Contribución por equipo</div></div></div>
+          <div class="ph"><div><div class="pt">Arisale Con Alta — 40 lic</div><div class="ps">Head Ana 33 · Head Carlos 7 · Dia 19 Julio</div></div></div>
           <div style="position:relative;height:200px"><canvas id="cArisTeam"></canvas></div>
           <div id="cArisTeamLgd" style="display:flex;justify-content:center;gap:14px;margin-top:8px;font-size:10px"></div>
         </div>
         <div class="panel">
-          <div class="ph"><div><div class="pt">Arisale — Pre Cierre / Sin Alta</div><div class="ps">13 lic sin alta · 12 lic cerradas · Dia 19 Julio</div></div></div>
+          <div class="ph"><div><div class="pt">Arisale — Estado Alta Sunat</div><div class="ps">Con alta: 40 lic · Sin alta: 0 lic · Dia 19 Julio</div></div></div>
           <div style="position:relative;height:200px"><canvas id="cArisSinAlta"></canvas></div>
           <div id="cArisSinAltaLgd" style="display:flex;justify-content:center;gap:14px;margin-top:8px;font-size:10px"></div>
         </div>
@@ -333,7 +333,7 @@ canvas{display:block}
 
       <!-- Arisale Cumplimiento -->
       <div class="panel" style="margin-bottom:14px">
-        <div class="ph"><div><div class="pt">Arisale Cumplimiento — Dia 19 Julio</div><div class="ps">Valor licencias vs cuota · Senior S/.240 · Junior S/.180 · Dia 19 Julio</div></div></div>
+        <div class="ph"><div><div class="pt">Arisale Cumplimiento — Dia 19 Julio</div><div class="ps">Valor cerrado vs Cuota · Senior S/.240 · Junior S/.180</div></div></div>
         <div style="position:relative;height:280px"><canvas id="cArisCumpl"></canvas></div>
       </div>
 
@@ -1564,10 +1564,10 @@ function bP1(){
   var _ALL_BC=["#FF6B6B","#FF6B9D","#6BCF7F","#FFD93D","#888780","#EC4899","#06B6D4","#8B5CF6","#FF8C42","#4ECDC4","#00E5A0","#F59E0B","#84CC16","#F97316","#00C9FF","#E11D48","#3B82F6"];
   var _ALL_CAP=[58528.87,225356.39,58528.87,51956.87,81255.47,274233.69,235096.44,302119.59,310372.63,342060.74,504437.13,160582.05,89737.66,56041.68,243816.04,234276.29,2784.10];
   var _ALL_CUOTA_CAP=[280000,280000,280000,280000,250000,250000,250000,250000,280000,280000,280000,280000,250000,250000,250000,250000,250000];
-  var _ALL_QR=[1,4,0,4,0,1,1,0,2,1,1,1,2,3,1,0,0];
-  var _ALL_RUC=[0,0,0,0,0,1,0,1,1,0,0,0,1,0,1,1,0];
-  var _ALL_RUC_MAY=[0,0,0,0,0,1,0,1,1,0,0,0,1,0,1,1,0];
-  var _ALL_ARIS=[0,0,287,0,59,59,0,0,0,59,59,0,59,0,0,0,0];
+  var _ALL_QR=[4,3,0,4,0,1,1,0,4,2,6,2,2,3,4,0,0];
+  var _ALL_RUC=[3,0,1,0,2,5,2,12,4,2,4,0,2,3,4,3,0];
+  var _ALL_RUC_MAY=[3,0,1,0,2,5,2,12,4,2,4,0,2,3,4,3,0];
+  var _ALL_ARIS=[0,169,118,338,0,118,0,0,692,885,582,0,0,0,118,0,0];
   var _ALL_ARIS_CUOTA=[240,240,240,240,180,180,180,180,240,240,240,240,180,180,180,180,180];
 
   // Filtrar por equipo
@@ -1582,14 +1582,13 @@ function bP1(){
   var _sum=function(a){return a.reduce(function(s,v){return s+v;},0);};
   var _cap_tot=_sum(_cap);
   var _qr_tot=_sum(_qr_h);
-  if(_t==='all')_qr_tot=6;else if(_t==='carlos')_qr_tot=3;else _qr_tot=3;
+  if(_t==='all')_qr_tot=16;else if(_t==='carlos')_qr_tot=9;else _qr_tot=7;
   var _ruc_tot=_sum(_ruc_h);
   var _ruc_may_tot=_sum(_ruc_may_h);
   var _ruc_abr_tot=_ruc_tot-_ruc_may_tot;
   // Ana Carrera no está en array de 14 — corregir totales globales
   if(_t==='all'){_ruc_tot=47;_ruc_may_tot=47;_ruc_abr_tot=0;}
-  if(_t==='all')_qr_tot=3;
-  if(_t==='carlos'){_ruc_tot=25;_ruc_may_tot=25;_ruc_abr_tot=0;}
+    if(_t==='carlos'){_ruc_tot=25;_ruc_may_tot=25;_ruc_abr_tot=0;}
   if(_t==='ana'){_ruc_tot=22;_ruc_may_tot=22;_ruc_abr_tot=0;}
   var _aris_tot=_sum(_aris_h);
   var _aris_lic_tot=(_t==='all'?3:(_t==='carlos'?3:0));
@@ -1606,21 +1605,21 @@ function bP1(){
   });
 
   // QR stats — Jul-15: 5 activos, 8 pendientes, total 13
-  var _qr_carlos=(_t==='all'?6:(_t==='carlos'?6:0));
-  var _qr_ana=(_t==='all'?4:(_t==='carlos'?0:4));
-  var _qr_pend=(_t==='all'?15:(_t==='carlos'?7:8));
+  var _qr_carlos=(_t==='all'?14:(_t==='carlos'?14:0));
+  var _qr_ana=(_t==='all'?20:(_t==='carlos'?0:20));
+  var _qr_pend=(_t==='all'?18:(_t==='carlos'?5:13));
   var _qr_may_cnt=(_t==='all'?0:(_t==='carlos'?0:0));
-  var _qr_abr_cnt=(_t==='all'?21:(_t==='carlos'?9:12));
+  var _qr_abr_cnt=(_t==='all'?34:(_t==='carlos'?14:20));
   var _qr_may_monto=(_t==='all'?0:(_t==='carlos'?0:0));
-  var _qr_abr_monto=(_t==='all'?129526:(_t==='carlos'?50000:79526));
+  var _qr_abr_monto=(_t==='all'?171412.43:(_t==='carlos'?68000:103412));
 
   // RUC stats — Junio:0 Julio:13 (Carlos:10 Ana:3)
   var _ruc_carlos_may=0;
   var _ruc_ana_may=0;
   var _ruc_carlos_abr=(_t==='all'?25:(_t==='carlos'?25:0));
   var _ruc_ana_abr=(_t==='all'?22:(_t==='ana'?22:0));
-  var _ruc_ge25=(_t==='all'?8:(_t==='carlos'?5:3));
-  var _ruc_lt25=(_t==='all'?39:(_t==='carlos'?20:19));
+  var _ruc_ge25=(_t==='all'?12:(_t==='carlos'?7:5));
+  var _ruc_lt25=(_t==='all'?35:(_t==='carlos'?18:17));
   var _ruc_fun=77;
 
   // Arisale stats
@@ -1843,7 +1842,7 @@ function bP1(){
     var el=document.getElementById('cRucCumpl');if(!el)return;
     var _rc={id:'rC31b',afterDatasetsDraw:function(chart){var ctx=chart.ctx,m=chart.getDatasetMeta(0);ctx.save();m.data.forEach(function(b,i){var v=_ruc_may_h[i];if(v>0){var p=v/3*100;ctx.fillStyle=p>=100?'#16A34A':p>=66?'#EA580C':'#DC2626';ctx.font='bold 13px sans-serif';ctx.textAlign='center';ctx.textBaseline='bottom';ctx.fillText(v,b.x,b.y-4);}});ctx.restore();}};
     var _cuota_line=_ruc_may_h.map(function(){return 3;});
-    CHS['cRucCumpl']=new Chart(el,{type:'bar',plugins:[_rc],data:{labels:_lbl,datasets:[{label:'RUC Junio',data:_ruc_may_h,backgroundColor:_ruc_may_h.map(function(v){return v>=3?'rgba(34,197,94,.80)':'rgba(239,68,68,.75)';}),borderColor:_ruc_may_h.map(function(v){return v>=3?'#22C55E':'#EF4444';}),borderWidth:1.5,borderRadius:5,borderSkipped:false,order:1},{label:'Cuota',data:_cuota_line,type:'line',borderColor:'rgba(30,30,30,.70)',backgroundColor:'rgba(0,0,0,0)',borderWidth:1.5,borderDash:[5,4],pointRadius:0,fill:false,order:0}]},options:{responsive:true,maintainAspectRatio:false,layout:{padding:{top:24}},plugins:{legend:{display:false},tooltip:{callbacks:{title:function(ctx){return _n[ctx[0].dataIndex]+' ('+_tt[ctx[0].dataIndex]+')';},label:function(ctx){if(ctx.datasetIndex===1)return 'Cuota: 3 RUC';return 'RUC Jun: '+ctx.raw+' ('+Math.round(ctx.raw/3*100)+'%)';}}}},scales:{x:{ticks:{font:{size:10},color:'var(--t2)'},grid:{display:false}},y:{max:10,ticks:{stepSize:1,font:{size:10}},grid:{color:'rgba(0,0,0,.06)'}}}}});
+    CHS['cRucCumpl']=new Chart(el,{type:'bar',plugins:[_rc],data:{labels:_lbl,datasets:[{label:'RUC Julio',data:_ruc_may_h,backgroundColor:_ruc_may_h.map(function(v){return v>=3?'rgba(34,197,94,.80)':'rgba(239,68,68,.75)';}),borderColor:_ruc_may_h.map(function(v){return v>=3?'#22C55E':'#EF4444';}),borderWidth:1.5,borderRadius:5,borderSkipped:false,order:1},{label:'Cuota',data:_cuota_line,type:'line',borderColor:'rgba(30,30,30,.70)',backgroundColor:'rgba(0,0,0,0)',borderWidth:1.5,borderDash:[5,4],pointRadius:0,fill:false,order:0}]},options:{responsive:true,maintainAspectRatio:false,layout:{padding:{top:24}},plugins:{legend:{display:false},tooltip:{callbacks:{title:function(ctx){return _n[ctx[0].dataIndex]+' ('+_tt[ctx[0].dataIndex]+')';},label:function(ctx){if(ctx.datasetIndex===1)return 'Cuota: 3 RUC';return 'RUC Jul: '+ctx.raw+' ('+Math.round(ctx.raw/3*100)+'%)';}}}},scales:{x:{ticks:{font:{size:10},color:'var(--t2)'},grid:{display:false}},y:{max:13,ticks:{stepSize:1,font:{size:10}},grid:{color:'rgba(0,0,0,.06)'}}}}});
   })();
 
   // ── QR Parlante ────────────────────────────────────────────────────────────
@@ -1869,9 +1868,9 @@ function bP1(){
   dc('cQrFact');
   (function(){
     var el=document.getElementById('cQrFact');if(!el)return;
-    var _sols=['S/.'+Math.round(_qr_may_monto/1000)+'K','S/.'+Math.round(_qr_abr_monto)];
+    var _sols=['S/.'+Math.round(_qr_may_monto).toLocaleString('es-PE'),'S/.'+Math.round(_qr_abr_monto).toLocaleString('es-PE')];
     var _qf1={id:'qf31',afterDatasetsDraw:function(chart){var ctx=chart.ctx,ds=chart.data.datasets[0];var tot=ds.data.reduce(function(a,b){return a+b;},0);chart.getDatasetMeta(0).data.forEach(function(arc,i){var v=ds.data[i];if(v<=0)return;var mid=(arc.startAngle+arc.endAngle)/2;var r2=(arc.outerRadius+arc.innerRadius)/2;var x=arc.x+Math.cos(mid)*r2,y=arc.y+Math.sin(mid)*r2;ctx.save();ctx.fillStyle='#fff';ctx.font='bold 10px sans-serif';ctx.textAlign='center';ctx.textBaseline='middle';ctx.fillText(v+' QR',x,y-8);ctx.font='9px sans-serif';ctx.fillText(_sols[i],x,y+4);ctx.fillText('('+Math.round(v/tot*100)+'%)',x,y+15);ctx.restore();});}};
-    CHS['cQrFact']=new Chart(el,{type:'doughnut',plugins:[_qf1],data:{labels:['Junio','Julio'],datasets:[{data:[_qr_may_cnt,_qr_abr_cnt],backgroundColor:['rgba(168,85,247,.80)','rgba(59,130,246,.82)'],borderColor:['#A855F7','#3B82F6'],borderWidth:2,hoverOffset:10}]},options:{responsive:true,maintainAspectRatio:false,cutout:'62%',plugins:{legend:{display:false},tooltip:{callbacks:{label:function(ctx){var montos=['S/.0','S/.129,526'];return ctx.label+': '+ctx.raw+' QR = '+montos[ctx.dataIndex];}}}}}});
+    CHS['cQrFact']=new Chart(el,{type:'doughnut',plugins:[_qf1],data:{labels:['Junio','Julio'],datasets:[{data:[_qr_may_cnt,_qr_abr_cnt],backgroundColor:['rgba(168,85,247,.80)','rgba(59,130,246,.82)'],borderColor:['#A855F7','#3B82F6'],borderWidth:2,hoverOffset:10}]},options:{responsive:true,maintainAspectRatio:false,cutout:'62%',plugins:{legend:{display:false},tooltip:{callbacks:{label:function(ctx){var montos=['S/.0','S/.171,412.43'];return ctx.label+': '+ctx.raw+' QR = '+montos[ctx.dataIndex];}}}}}});
     var l=document.getElementById('cQrFactLgd'),sp='display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:4px;background:';
     if(l)l.innerHTML='<span><span style="'+sp+'#A855F7"></span>Junio: '+_qr_may_cnt+' QR = S/.0</span>'+'<span style="margin-left:8px"><span style="'+sp+'#3B82F6"></span>Julio: '+_qr_abr_cnt+' QR = S/.94,662</span>';
   })();
@@ -1883,7 +1882,7 @@ function bP1(){
     var _cuota_line=_qr_h.map(function(){return 3;});
     var _qr_bg=_qr_h.map(function(v){return v>=3?'rgba(34,197,94,.82)':'rgba(239,68,68,.75)';});
     var _qr_bc=_qr_h.map(function(v){return v>=3?'#22C55E':'#EF4444';});
-    CHS['cQrCumpl']=new Chart(el,{type:'bar',plugins:[_rc],data:{labels:_lbl,datasets:[{label:'QR Julio',data:_qr_h,backgroundColor:_qr_bg,borderColor:_qr_bc,borderWidth:1.5,borderRadius:5,borderSkipped:false,order:1},{label:'Cuota',data:_cuota_line,type:'line',borderColor:'rgba(30,30,30,.70)',backgroundColor:'rgba(0,0,0,0)',borderWidth:1.5,borderDash:[5,4],pointRadius:0,fill:false,order:0}]},options:{responsive:true,maintainAspectRatio:false,layout:{padding:{top:24}},plugins:{legend:{display:false},tooltip:{callbacks:{title:function(ctx){return _n[ctx[0].dataIndex]+' ('+_tt[ctx[0].dataIndex]+')';},label:function(ctx){if(ctx.datasetIndex===1)return 'Cuota: 3 QR';return 'QR: '+ctx.raw+' ('+Math.round(ctx.raw/3*100)+'%)';}}}},scales:{x:{ticks:{font:{size:10},color:'var(--t2)'},grid:{display:false}},y:{max:10,ticks:{stepSize:1,font:{size:10}},grid:{color:'rgba(0,0,0,.06)'}}}}});
+    CHS['cQrCumpl']=new Chart(el,{type:'bar',plugins:[_rc],data:{labels:_lbl,datasets:[{label:'QR Julio',data:_qr_h,backgroundColor:_qr_bg,borderColor:_qr_bc,borderWidth:1.5,borderRadius:5,borderSkipped:false,order:1},{label:'Cuota',data:_cuota_line,type:'line',borderColor:'rgba(30,30,30,.70)',backgroundColor:'rgba(0,0,0,0)',borderWidth:1.5,borderDash:[5,4],pointRadius:0,fill:false,order:0}]},options:{responsive:true,maintainAspectRatio:false,layout:{padding:{top:24}},plugins:{legend:{display:false},tooltip:{callbacks:{title:function(ctx){return _n[ctx[0].dataIndex]+' ('+_tt[ctx[0].dataIndex]+')';},label:function(ctx){if(ctx.datasetIndex===1)return 'Cuota: 3 QR';return 'QR: '+ctx.raw+' ('+Math.round(ctx.raw/3*100)+'%)';}}}},scales:{x:{ticks:{font:{size:10},color:'var(--t2)'},grid:{display:false}},y:{max:13,ticks:{stepSize:1,font:{size:10}},grid:{color:'rgba(0,0,0,.06)'}}}}});
   })();
 
   // ── Arisale ────────────────────────────────────────────────────────────────
@@ -1900,7 +1899,7 @@ function bP1(){
   (function(){
     var el=document.getElementById('cArisTeam');if(!el)return;
     var _cAT={id:'cArisTeamLbl31',afterDatasetsDraw:function(chart){var ctx=chart.ctx,ds=chart.data.datasets[0];var total=ds.data.reduce(function(a,b){return a+b;},0);chart.getDatasetMeta(0).data.forEach(function(arc,i){var v=ds.data[i];if(v<=0)return;var mid=(arc.startAngle+arc.endAngle)/2,r=(arc.outerRadius+arc.innerRadius)/2;var x=arc.x+Math.cos(mid)*r,y=arc.y+Math.sin(mid)*r;var pct=Math.round(v/total*100);ctx.save();ctx.fillStyle='#fff';ctx.font='bold 11px sans-serif';ctx.textAlign='center';ctx.textBaseline='middle';ctx.fillText(v,x,y-6);ctx.fillText('('+pct+'%)',x,y+7);ctx.restore();});}};
-    var _da=_t==='carlos'?0:7; var _dc=_t==='ana'?0:7;
+    var _da=_t==='carlos'?0:33; var _dc=_t==='ana'?0:7;
     CHS['cArisTeam']=new Chart(el,{type:'doughnut',plugins:[_cAT],data:{labels:['Head Ana','Head Carlos'],datasets:[{data:[_da,_dc],backgroundColor:['rgba(168,85,247,.82)','rgba(249,115,22,.80)'],borderColor:['#A855F7','#F97316'],borderWidth:2,hoverOffset:10}]},options:{responsive:true,maintainAspectRatio:false,cutout:'62%',plugins:{legend:{display:false},tooltip:{callbacks:{label:function(ctx){return ctx.label+': '+ctx.raw+' lic';}}}}}});
     var l=document.getElementById('cArisTeamLgd'),sp='display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:4px;background:';
     if(l)l.innerHTML='<span><span style="'+sp+'#A855F7"></span>Head Ana: '+_da+' lic</span>'+'<span style="margin-left:8px"><span style="'+sp+'#F97316"></span>Head Carlos: '+_dc+' lic</span>';
@@ -1910,9 +1909,9 @@ function bP1(){
   (function(){
     var el=document.getElementById('cArisSinAlta');if(!el)return;
     var _plug={id:'asa31',afterDatasetsDraw:function(chart){var ctx=chart.ctx,ds=chart.data.datasets[0];var total=ds.data.reduce(function(a,b){return a+b;},0);chart.getDatasetMeta(0).data.forEach(function(arc,i){var v=ds.data[i];if(v<=0)return;var mid=(arc.startAngle+arc.endAngle)/2;var r2=(arc.outerRadius+arc.innerRadius)/2;var x=arc.x+Math.cos(mid)*r2,y=arc.y+Math.sin(mid)*r2;var pct=Math.round(v/total*100);ctx.save();ctx.fillStyle='#fff';ctx.font='bold 11px sans-serif';ctx.textAlign='center';ctx.textBaseline='middle';ctx.fillText(v+' lic',x,y-6);ctx.fillText('('+pct+'%)',x,y+7);ctx.restore();})}};
-    CHS['cArisSinAlta']=new Chart(el,{type:'doughnut',plugins:[_plug],data:{labels:['Sin Alta','Cerradas'],datasets:[{data:[8,12],backgroundColor:['rgba(239,68,68,.75)','rgba(0,229,160,.82)'],borderColor:['#EF4444','#00E5A0'],borderWidth:2,hoverOffset:10}]},options:{responsive:true,maintainAspectRatio:false,cutout:'58%',plugins:{legend:{display:false},tooltip:{callbacks:{label:function(ctx){return ctx.label+': '+ctx.raw+' lic';}}}}}});
+    CHS['cArisSinAlta']=new Chart(el,{type:'doughnut',plugins:[_plug],data:{labels:['Sin Alta','Cerradas'],datasets:[{data:[0,40],backgroundColor:['rgba(239,68,68,.75)','rgba(0,229,160,.82)'],borderColor:['#EF4444','#00E5A0'],borderWidth:2,hoverOffset:10}]},options:{responsive:true,maintainAspectRatio:false,cutout:'58%',plugins:{legend:{display:false},tooltip:{callbacks:{label:function(ctx){return ctx.label+': '+ctx.raw+' lic';}}}}}});
     var l=document.getElementById('cArisSinAltaLgd'),sp='display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:4px;background:';
-    if(l)l.innerHTML='<span><span style="'+sp+'#00E5A0"></span>8 lic cerradas con Alta Sunat</span><span style="margin-left:8px"><span style="'+sp+'#EF4444"></span>12 lic Sin Alta Sunat</span>';
+    if(l)l.innerHTML='<span><span style="'+sp+'#00E5A0"></span>40 lic cerradas con Alta Sunat</span><span style="margin-left:8px"><span style="'+sp+'#EF4444"></span>0 lic Sin Alta Sunat</span>';
   })();
 
   dc('cArisCumpl');
